@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.rojo{
+    background-color: red;
+    width: 150px;
+    height: 1500px;
+}
+.azul{
+    background-color: blue;
+    width: 120px;
+    height: 30px;
+    position: sticky;
+    top: 20%;
+
+    /*position: relative;
+    top: 30px;
+    left: 50px;*/
+}
+.verde{
+    background-color: green;
+    width: 150px;
+    height: 1500px;
+}
+.circulo{
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    z-index: 10;
+}
+p{
+    color: white;
+}
+
+/* HEADER */
+
+/* barra de navegacion*/
+
+.barraNavegacion__lista {
+    list-style: none;
+    text-align: right;
+}
+.barraNavegacion__anchor {
+    color: #04545a;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+.tituloPrincipal {
+    color: #04545a;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+.tituloSecundario {
+    color: #04545a;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+.subtitulo {
+    color: #04545a;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+/* MAIN */
+
+.formulario {
+    color: #04545a;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+}
+
+
+/* FOOTER */
+
+.logoHipervinculo {
+    list-style: none;
+}
+
+/* GOOGLE FONT Y OTROS
+
+font-family: 'Lato', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+.parrafoL {
+    text-align: left;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textoEnriquecido {
+    font-size: 40px;
+    font-style: italic;
+    color: blueviolet;
+    background-color: #34d41f;
+}
+
+/*CLASE 29/03
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.padre{
+    background-color: red;
+    height: 200px;
+    width: 100vw;
+    padding: 20px;
+}
+.hijo{   
+    border: solid 1px black;
+    background-color: blue;
+    width: 50px;
+    font-size: 50px;
+   /*Padding con 4 valores: top - right - bottom - left (orden de las agujas del reloj)
+   padding: 10px 15px 20px 30px;*/
+
+   /*Padding con 2 valores: top y bottom - left y right
+   Padding: 20px 5px;*/
+
+   /*Padding con 1 valor: todo igual
+   Padding: 20px;
+   overflow: visible;
+}
+.galeria{
+    overflow-x: scroll;
+}
+.galeria_imagen{
+    height: 200px;
+    width: 350px;
+    display: inline;
+}*/
+
+
+
+
+
+
+
+
+.fotoInicio{
+    width: 100%;
+}
+
+.logoHipervinculoChico{
+    width: 2vw;
+}
+
+.logoHipervinculoChico li{
+    display: inline-block;
+}
+
+.cabecera{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.cabecera__imagen{
+    width: 20px;
+}
+
+.barraNavegacion__lista{
+    display: flex;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    overflow-x: scroll;
+    height: 40vh;
+    width: 40vw;
+    margin: auto;
+}
+
+.galeria__imagen{
+    height: 150px;
+    margin: 15px;
+}
+
+.cardsFotos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.barraNavegacion{
+    background-color: #333333;
+    flex-wrap: wrap;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.barraNavegacion__imagen {
+    width: 15px;
+    height: 55px;
+    padding-left: 100px;
+}
+
+.barraNavegacion__texto__logo {
+    color: #D3D3D3;
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    padding: 10px;
+    align-self: center;
+}
+
+.barraNavegacion__lista {
+    display: inline-flex;
+    list-style: none;
+    padding-right: 100px;
+}
+
+.barraNavegacion__anchor {
+    color: #D3D3D3;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    padding: 20px;
+}
+
+.barraNavegacion__anchor:hover {
+    color: #333333;
+    background-color: #D3D3D3;
+}
