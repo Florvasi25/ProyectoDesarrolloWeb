@@ -209,7 +209,7 @@ h5 {
 .cuerpo__medio {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #D8D8D8;
     height: fit-content;
@@ -219,13 +219,12 @@ h5 {
 .fotos__medio {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 0 0 0;
+    justify-content: center;
 }
 
 .fotoMedio__index{
-    width: 500px;
-    padding: 0 0 0 10px;
-    
+    width: 450px;
+    padding: 10px 0 0 10px;
 }
 
 .texto__medio {
@@ -235,7 +234,7 @@ h5 {
 
 .cajaTexto {
     width: 700px;
-    padding: 0 0 0 50px;
+    padding: 0 50px 0 20px;
 }
 
 .tituloSecundario__index {
@@ -281,8 +280,10 @@ h5 {
 }
 
 .texto__inferior {
-    display: flex; 
-
+    display: flex;
+    margin: 0 0 0 250px;
+    font-size: 25px;
+    padding: 0 0 50px 0;
 }
 
 .botonGaleria__index {
@@ -291,7 +292,7 @@ h5 {
     border: solid 1px;
     border-color: #333333;
     font-family: 'Mulish', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
     color: #333333;
     border-radius: 2px;
@@ -306,23 +307,25 @@ h5 {
 
 .imagenes__inferior {
     display: flex;
-    margin: 30px 125px 0 0;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .fotoInferior__1 {
-    width: 500px;
-    margin: 0 10px 0 125px;   
+    width: 755px;
+    padding: 0 0 0 5px;
+}
+
+.imagenesInferior__pequeñas {
+    padding: 0 0 0 5px;
 }
 
 .fotoInferior__2{
-    width: 245px;
-    margin: 0 5px 0 0;
+    width: 375px;
 }
 
 .fotoInferior__3 {
-    width: 245px;
-    margin: 5px 5px 0 0;
+    width: 375px;
 }
 
 /* MAIN QUIENES SOMOS */
@@ -534,14 +537,13 @@ h5 {
         flex-direction: column-reverse;
     }
 
-    .texto__medio {
-        flex-wrap: wrap;
-        align-items: center;
-        margin: 0 75px 0 75px;
-    }
-
+    .texto__medio
     .fotos__medio {
         margin: 0 0 0 0;
+    }
+
+    .fotoMedio__index {
+        width: 500px;
     }
 }
 
