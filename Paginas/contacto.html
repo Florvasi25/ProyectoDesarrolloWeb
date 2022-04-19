@@ -11,83 +11,84 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-    <!-- header -->
+    <body>
+        
+        <!-- header -->
 
-    <header class="header">
-        <nav class="barraNavegacion">
-            <section class="barraNavegacion__logoTexto">
-                <a href="../index.html">
-                    <img src="../Imagenes/LogoNav.png" alt="logo de la escuela" class="barraNavegacion__imagen">
-                </a>
-                <a href="../index.html" class="logoTexto__anchor">
-                    <p class="barraNavegacion__texto">ESCUELA INTEGRAL DE LA DANZA</p>
-                </a>
+        <header class="header">
+            <nav class="barraNavegacion">
+                <section class="barraNavegacion__logoTexto">
+                    <a href="../index.html">
+                        <img src="../Imagenes/LogoNav.png" alt="logo de la escuela" class="barraNavegacion__imagen">
+                    </a>
+                    <a href="../index.html" class="logoTexto__anchor">
+                        <p class="barraNavegacion__texto">ESCUELA INTEGRAL DE LA DANZA</p>
+                    </a>
+                </section>
+                <section>
+                    <ul class="barraNavegacion__lista">
+                        <li> <a href="../Paginas/quienes-somos.html" class="barraNavegacion__anchor"> Quienes Somos </a> </li>
+                        <li> <a href="../Paginas/galeria.html" class="barraNavegacion__anchor"> Galería </a> </li>
+                        <li> <a href="../Paginas/festival-2022.html" class="barraNavegacion__anchor"> Festival </a> </li>
+                        <li> <a href="../Paginas/contacto.html" class="barraNavegacion__anchor"> Contacto </a> </li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
+    
+        <!-- Main -->
+    
+        <form>
+            <section class="main__formulario">
+                <div>
+                    <h3 class="tituloSecundario__formulario">Completá tus datos y nos contactaremos a la brevedad</h3>
+                </div>
+                <section class="formulario">
+                    <div>
+                        <label for="nombre_completo" class="formulario">Nombre y Apellido del Alumno:</label>
+                        <input type="text" name="nombre_completo">    
+                    </div>
+                    <div>
+                        <label for="fecha_nacimiento" class="formulario">Fecha de Nacimiento del Alumno:</label>
+                        <input type="date" class="formulario" name="fecha_nacimiento">    
+                    </div>
+                    <div>
+                        <label for="nombre_completo" class="formulario">Nombre y Apellido de la Madre, Padre o Tutor:</label>
+                        <input type="text" name="nombre_completo">    
+                    </div>
+                    <div>
+                        <label for="direccion" class="formulario">Dirección:</label>
+                        <input type="text" name="direccion">    
+                    </div>
+                    <div>
+                        <label for="email" class="formulario">E-mail</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div>
+                        <label for="num_tel" class="formulario">Número de Teléfono:</label>
+                        <input type="tel" name="num:tel">    
+                    </div>
+                    <input type="button" class="formulario" value="Enviar">
+                </section>
+                <div>
+                    <h3 class="tituloSecundario__formulario">¡Muchas Gracias!</h3>
+                </div>
+            </section>
+        </form>
+    
+        <!-- footer -->
+    
+        <footer>
+            <section class="footer__logoTexto">
+                <div>
+                    <img src="../Imagenes/LogoNav.png" alt="logo de la escuela" class="footer__imagen">
+                </div>
+                <div class="footer__logoTexto__div">
+                    <p class="footer__texto">ESCUELA INTEGRAL</p>
+                    <p class="footer__texto">DE LA DANZA</p>    
+                </div>
             </section>
             <section>
-                <ul class="barraNavegacion__lista">
-                    <li> <a href="../Paginas/quienes-somos.html" class="barraNavegacion__anchor"> Quienes Somos </a> </li>
-                    <li> <a href="../Paginas/galeria.html" class="barraNavegacion__anchor"> Galería </a> </li>
-                    <li> <a href="../Paginas/festival-2022.html" class="barraNavegacion__anchor"> Festival </a> </li>
-                    <li> <a href="../Paginas/contacto.html" class="barraNavegacion__anchor"> Contacto </a> </li>
-                </ul>
-            </section>
-        </nav>
-    </header>
-
-    <!-- Main -->
-
-    <form>
-        <section class="main__formulario">
-            <div>
-                <h3 class="tituloSecundario__formulario">Completá tus datos y nos contactaremos a la brevedad</h3>
-            </div>
-            <section class="formulario">
-                <div>
-                    <label for="nombre_completo" class="formulario">Nombre y Apellido del Alumno:</label>
-                    <input type="text" name="nombre_completo">    
-                </div>
-                <div>
-                    <label for="fecha_nacimiento" class="formulario">Fecha de Nacimiento del Alumno:</label>
-                    <input type="date" class="formulario" name="fecha_nacimiento">    
-                </div>
-                <div>
-                    <label for="nombre_completo" class="formulario">Nombre y Apellido de la Madre, Padre o Tutor:</label>
-                    <input type="text" name="nombre_completo">    
-                </div>
-                <div>
-                    <label for="direccion" class="formulario">Dirección:</label>
-                    <input type="text" name="direccion">    
-                </div>
-                <div>
-                    <label for="email" class="formulario">E-mail</label>
-                    <input type="email" name="email">
-                </div>
-                <div>
-                    <label for="num_tel" class="formulario">Número de Teléfono:</label>
-                    <input type="tel" name="num:tel">    
-                </div>
-                <input type="button" class="formulario" value="Enviar">
-            </section>
-            <div>
-                <h3 class="tituloSecundario__formulario">¡Muchas Gracias!</h3>
-            </div>
-        </section>
-    </form>
-
-    <!-- footer -->
-
-    <footer>
-        <section class="footer__logoTexto">
-            <div>
-                <img src="../Imagenes/LogoNav.png" alt="logo de la escuela" class="footer__imagen">
-            </div>
-            <div class="footer__logoTexto__div">
-                <p class="footer__texto">ESCUELA INTEGRAL</p>
-                <p class="footer__texto">DE LA DANZA</p>    
-            </div>
-        </section>
-        <section class="footer__seccionHipervinculo">
-            <div>
                 <ul class="footer__hipervinculo">
                     <li class="footer__lista"> 
                         <a href="https://www.facebook.com/escuelaintegral.deladanza.73" target="_blank"> 
@@ -99,26 +100,27 @@
                             <img src="../Imagenes/LogoInstagram.png" alt="Logo Instagram" class="logoHipervinculoRedes">
                         </a> 
                     </li>
-                    <li class="footer__hipervinculo">
+                    <li class="footer__lista">
                         <img src="../Imagenes/LogoGmail.png" alt="Logo Gmail" class="logoHipervinculoRedes">
+                        <div class="footer__email">
+                            <p>gsguzman@hotmail.com</p>
+                            <p>escuelaintegraldf@hotmail.com</p>
+                        </div>
                     </li>
-                    <div class="footer__email">
-                        <p>gsguzman@hotmail.com</p>
-                        <p>escuelaintegraldf@hotmail.com</p>
-                    </div>
                     <li class="footer__lista"> 
                         <a href="https://goo.gl/maps/r9YDyUWmErz4jXuK8" target="_blank"> 
                             <img src="../Imagenes/LogoMaps.png" alt="Logo Google Maps" class="logoHipervinculoRedes">
-                        </a> 
+                        </a>
+                        <div class="footer__direccion">
+                            <p>General Paz esq Bv. Zamora,</p>
+                            <p>Deán Funes, Córdoba Capital</p>
+                        </div> 
                     </li>
-                    <div class="footer__direccion">
-                        <p>General Paz esq Bv. Zamora,</p>
-                        <p>Deán Funes, Córdoba Capital</p>
-                    </div>
                 </ul>
-            </div>
-        </section>
-    </footer>
+            </section>
+        </footer>    
+        
+    </body>
 </html>
 
 
