@@ -860,12 +860,12 @@ footer {
 
     .fotoMedioQS__1 {
         width: 50%;
-        height: max-content;
+        height: min-content;
     }
 
     .fotoMedioQS__2 {
         width: 50%;
-        height: max-content;
+        height: auto;
     }
 
     .subtitulo__QS {
