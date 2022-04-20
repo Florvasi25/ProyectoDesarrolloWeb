@@ -704,7 +704,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 750px) {
   
 
     /* HEADER */
@@ -818,6 +818,14 @@ footer {
     .botonGaleria__index {
         font-size: 20px;
         padding: 15px;
+    }
+
+    .fotoInferior__2 {
+        display: none;
+    }
+
+    .fotoInferior__3 {
+        display: none;
     }
 
     /* MAIN QUIENES SOMOS */
