@@ -37,7 +37,7 @@ footer {
 
 
 .barraNavegacion{
-    background-color: #333333;
+    background-color: #165c85;
     display: flex;
     height: fit-content;
     flex-wrap: wrap;
@@ -879,15 +879,19 @@ footer {
 
     /* MAIN GALERIA */
 
-    .columnas {
-        width: 100%;
-    }
+
     .columnaDerecha {
         padding: 0 0 100px 0;
     }
 
-    .columnaIzquierda {
-        padding: 0;
+    .imagenGaleria {
+        width: 50%;
+        padding: 10px 0 0 0;
+    }
+
+    .imagenGaleria1 {
+        width: 100%;
+        padding: 10px 0 0 0;
     }
 
     /* FOOTER */
