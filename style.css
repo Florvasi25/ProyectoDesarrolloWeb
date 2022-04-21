@@ -712,11 +712,7 @@ footer {
     .barraNavegacion{
         background-color: #165c85;
         width: 100%;
-        margin: 0;
-    }
-
-    .barraNavegacion__imagen {
-        padding: 0;
+        
     }
 
     .barraNavegacion__texto {
@@ -729,7 +725,7 @@ footer {
 
     .barraNavegacion__anchor {
         font-size: 15px;
-        padding: 10px;
+        padding: 10px 10px 30px 10px;
     }
 
     /* MAIN INDEX */
@@ -858,13 +854,18 @@ footer {
         margin: 50px 0 50px 0;
     }
 
+    .cuerpoMedioQS__imagenes {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     .fotoMedioQS__1 {
-        width: 50%;
-        height: min-content;
+        width: 40%;
+        height: auto;
     }
 
     .fotoMedioQS__2 {
-        width: 50%;
+        width: 40%;
         height: auto;
     }
 
@@ -890,10 +891,6 @@ footer {
     }
 
     /* FOOTER */
-
-    .footer__imagen {
-        padding: 30px 0 0 0;
-    }
 
     .footer__hipervinculo {
         padding: 0 0 0 0;
