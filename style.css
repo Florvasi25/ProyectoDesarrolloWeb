@@ -12,46 +12,9 @@ font-family: 'Quicksand', sans-serif;
 
 /* HEADER */
 
-body {
-    min-height: 100vh;
-    position: relative;
-    display: grid;
-    grid-template-areas: 
-        "cabecera"
-        "cuerpo"
-        "pie"
-    ;
-}
-
-.header {
-    grid-area: cabecera;
-}
-
-main {
-    grid-area: cuerpo;
-}
-
-footer {
-    grid-area: pie;
-}
-
 
 .barraNavegacion{
     background-color: #165c85;
-    display: flex;
-    height: fit-content;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.menu__desplegable {
-    display: none;
-}
-
-.barraNavegacion__logoTexto {
-    display: flex;
-    align-items: center;
 }
 
 .barraNavegacion__imagen {
@@ -59,26 +22,12 @@ footer {
     padding: 30px 0 30px 0;
 }
 
-.logoTexto__anchor {
-    text-decoration: none;
-}
-
 .barraNavegacion__texto {
     font-family: 'Mulish', sans-serif;
     color: #D3D3D3;
     margin-left: 10px;
-    font-size: 30px;
-    display: inline-block;
-    position: relative;
-}
-
-.barraNavegacion__hamburguesa {
-    display: none;
-}
-
-.barraNavegacion__lista {
-    display: flex;
-    list-style: none;
+    font-size: 25px;
+    text-decoration: none;
 }
 
 .barraNavegacion__anchor {
@@ -87,8 +36,6 @@ footer {
     text-decoration: none;
     font-family: 'Mulish', sans-serif;
     padding: 15px;
-    display: inline-block;
-    position: relative;
 }
 
 .barraNavegacion__anchor:hover {
@@ -99,7 +46,8 @@ footer {
 }
 
 .barraNavegacion__texto:hover {
-    font-weight: bold;
+    color: #D3D3D3;
+    font-weight: bolder;
 }
 
 /* MAIN INDEX */
@@ -114,7 +62,7 @@ footer {
 
 .tituloPrincipal__index {
     color: #333333;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     font-family: 'Mulish', sans-serif;
     margin: 100px 0 10px 0;
@@ -131,10 +79,9 @@ h5 {
     margin: 0 0 50px 0;
 }
 
-.fotoPrincipal__index {
+#fotosPrincipal__index {
     align-self: center;
     width: 80%;
-    padding: 0 0 50px 0;
 }
 
 .cuerpo__medio {
@@ -145,6 +92,7 @@ h5 {
     background-color: #D8D8D8;
     height: fit-content;
     padding: 100px 0 100px 0;
+    margin: 50px 0 0 0;
 }
 
 .fotos__medio {
