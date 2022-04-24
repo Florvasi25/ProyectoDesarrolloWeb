@@ -8,6 +8,14 @@ font-family: 'Quicksand', sans-serif;
 
 /* HEADER */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
 
 .barraNavegacion{
     background-color: #165c85;
@@ -46,7 +54,7 @@ font-family: 'Quicksand', sans-serif;
     font-weight: bolder;
 }
 
-/* MAIN INDEX */
+/* CUERPO SUPERIOR INDEX */
 
 .cuerpo__superior {
     width: 100%;
@@ -80,10 +88,16 @@ h5 {
     width: 80%;
 }
 
+/* CUERPO MEDIO INDEX */
+
 .cuerpo__medio {
     background-color: #D8D8D8;
     padding: 100px 0 100px 0;
     margin: 50px 0 0 0;
+}
+
+.columnas__medio {
+    margin: 0;
 }
 
 .fotos__medio {
@@ -139,6 +153,7 @@ h5 {
     margin: 40px 0 20px 0;
 }
 
+/* CUERPO INFERIOR INDEX */
 
 .cuerpo__inferior {
     width: 100%;
@@ -200,6 +215,7 @@ h5 {
 .fotoInferior__3 {
     width: 372.5px;
 }
+
 
 /* MAIN QUIENES SOMOS */
 
@@ -445,7 +461,6 @@ footer {
     background-color: #333333;
     display: flex;
     flex-wrap: wrap;
-    height: fit-content;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -456,7 +471,7 @@ footer {
 }
 
 .footer__imagen {
-    height: 100px;
+    width: 30px;
     padding: 50px 0 50px 0;
 }
 
