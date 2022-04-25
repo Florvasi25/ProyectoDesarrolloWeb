@@ -159,7 +159,7 @@ h5 {
 /* CUERPO INFERIOR INDEX */
 
 .cuerpo__inferior {
-    width: 100%;
+    width: 80%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -196,32 +196,18 @@ h5 {
     margin: 0 0 0 20px;
 }
 
-.columnas__inferior {
-    display: flex;
-    flex-wrap: wrap;
+
+.imagenInferior__principal {
+    width: 80%;
 }
 
 .imagenes__inferior {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .fotoInferior__1 {
     width: 100%;
-    object-fit: scale-down;
 }
-
-.fotoInferior__2{
-    width: 100%;
-    object-fit: scale-down;
-}
-
-.fotoInferior__3 {
-    width: 375px;
-    object-fit: scale-down;
-}
-
 
 /* MAIN QUIENES SOMOS */
 
@@ -534,7 +520,6 @@ footer {
   
     /* HEADER */
 
-
     .barraNavegacion{
         background-color: #ff0080;
         display: flex;
@@ -582,13 +567,14 @@ footer {
     }
 
     .fotos__medio {
+        width: 80%;
         display: flex;
-        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .fotoMedio__index {
         width: 50%;
-    }
 
     .texto__inferior {
         margin: 0 0 0 0;
