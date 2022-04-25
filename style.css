@@ -34,12 +34,16 @@ p {
     text-decoration: none;
 }
 
+.nav__mdsm {
+    display: none;
+}
+
 .barraNavegacion__anchor {
     color: #D3D3D3;
     font-size: 20px;
     text-decoration: none;
     font-family: 'Mulish', sans-serif;
-    padding: 15px;
+    padding: 10px;
 }
 
 .barraNavegacion__anchor:hover {
@@ -107,7 +111,6 @@ h5 {
 
 .fotoMedio__index{
     width: 450px;
-    height: max-content;
     padding: 10px 0 0 10px;
 }
 
@@ -193,6 +196,11 @@ h5 {
     margin: 0 0 0 20px;
 }
 
+.columnas__inferior {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .imagenes__inferior {
     display: flex;
     justify-content: center;
@@ -200,20 +208,18 @@ h5 {
 }
 
 .fotoInferior__1 {
-    width: 750px;
-    padding: 0 5px 0 0;
-}
-
-.imagenesInferior__pequeñas {
     width: 100%;
+    object-fit: scale-down;
 }
 
 .fotoInferior__2{
-    width: 372.5px;
+    width: 100%;
+    object-fit: scale-down;
 }
 
 .fotoInferior__3 {
-    width: 372.5px;
+    width: 375px;
+    object-fit: scale-down;
 }
 
 
@@ -522,10 +528,12 @@ footer {
     font-size: 15px;
 }
 
+/* MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM */
 
 @media only screen and (max-width: 992px) {
   
     /* HEADER */
+
 
     .barraNavegacion{
         background-color: #ff0080;
@@ -534,6 +542,27 @@ footer {
         justify-content: space-evenly;
         height: fit-content;
         padding: 20px 0 20px 0;
+    }
+
+    .barraNavegacion__imagen {
+        width: 30px;
+    }
+
+    .nav__lg {
+        display: none;
+    }
+
+    .nav__mdsm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: #D3D3D3;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url(./Imagenes/menuHamburguesa.png);
     }
 
     /* MAIN INDEX */
@@ -568,6 +597,10 @@ footer {
 
     .imagenes__inferior {
         align-self: center;
+    }
+
+    .fotoInferior__1 {
+        padding: 0;
     }
 
     /* MAIN QUIENES SOMOS */
