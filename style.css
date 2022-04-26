@@ -32,6 +32,33 @@ p {
     margin-left: 10px;
     font-size: 25px;
     text-decoration: none;
+    position: relative;
+}
+
+.barraNavegacion__texto::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #D3D3D3;
+    /*ANIMACION*/
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.barraNavegacion__texto:hover::after {
+    /*ANIMACION*/
+    transform-origin: left;
+    transform: scale(1);
+}
+
+.barraNavegacion__texto:hover {
+    color: #D3D3D3;
+    font-weight: bolder;
 }
 
 .nav__mdsm {
@@ -44,19 +71,38 @@ p {
     text-decoration: none;
     font-family: 'Mulish', sans-serif;
     padding: 10px;
+    transition: background-color 0.5s;
+    position: relative;
 }
+
+.barraNavegacion__anchor::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #D3D3D3;
+    /*ANIMACION*/
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.barraNavegacion__anchor:hover::after {
+    /*ANIMACION*/
+    transform-origin: left;
+    transform: scale(1);
+}
+
 
 .barraNavegacion__anchor:hover {
     font-weight: bold;
-    color: #333333;
-    background-color: #D3D3D3;
-    border-radius: 5px;
+    color: #D3D3D3;
 }
 
-.barraNavegacion__texto:hover {
-    color: #D3D3D3;
-    font-weight: bolder;
-}
+
 
 /* CUERPO SUPERIOR INDEX */
 
