@@ -591,6 +591,14 @@ footer {
         padding: 20px 0 20px 0;
     }
 
+    .barraNavegacion__anchor::after {
+        display: none;
+    }
+
+    .barraNavegacion__texto::after {
+        display: none;
+    }
+
     .barraNavegacion__imagen {
         width: 30px;
     }
