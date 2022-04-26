@@ -157,7 +157,7 @@ h5 {
 .fotoMedio__index{
     width: 450px;
     padding: 10px 0 0 10px;
-}
+    box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493);}
 
 .texto__medio {
     display: flex;
@@ -267,6 +267,7 @@ h5 {
 
 .fotoInferior__1 {
     width: 100%;
+    box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493);
 }
 
 /* MAIN QUIENES SOMOS */
@@ -524,7 +525,7 @@ footer {
 
 .footer__imagen {
     width: 30px;
-    padding: 50px 0 50px 0;
+    padding: 75px 0 75px 0;
 }
 
 .footer__logoTexto__div {
@@ -581,7 +582,7 @@ footer {
     /* HEADER */
 
     .barraNavegacion{
-        background-color: #ff0080;
+        background-color: #165c85;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
