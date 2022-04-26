@@ -134,7 +134,7 @@ h5 {
 
 #fotosPrincipal__index {
     align-self: center;
-    width: 80%;
+    width: 70%;
 }
 
 /* CUERPO MEDIO INDEX */
@@ -263,10 +263,11 @@ h5 {
 
 .imagenes__inferior {
     display: flex;
+    justify-content: center;
 }
 
 .fotoInferior__1 {
-    width: 100%;
+    width: 80%;
     box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493);
 }
 
