@@ -416,8 +416,7 @@ main {
 
 .fotoMedioQS {
     height: 40vh;
-    box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493);}
-
+    box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493);
 }
 
 /* MAIN GALERIA */
@@ -428,7 +427,6 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0 0 100px 0;
 }
 
 .tituloPrincipal__galeria {
@@ -489,6 +487,7 @@ main {
 
 .columnaIzquierda {
     align-items: end;
+    row-gap: 20px;
 }
 
 .columnaDerecha {
@@ -499,6 +498,10 @@ main {
     width: 18vw;
     object-fit: cover;
     padding: 20px 10px 20px 10px;
+}
+
+.footer__lista {
+    column-gap: 20px;
 }
 
 .imagenGaleria1 {
@@ -530,7 +533,7 @@ main {
 
 /* MAIN FESTIVAL */
 
-.main__festival {
+/* .main__festival {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -565,6 +568,64 @@ main {
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
     margin: 0 0 20px 0;
+} */
+
+.main__festival {
+    width: 100%;
+    background-color: #F4F4F4;
+    padding: 100px 0 100px 0;
+}
+
+.tituloPrincipal__festival {
+    display: flex;
+    justify-content: center;
+    font-family: 'Mulish', sans-serif;
+    color: #333333;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+.subtitulo__festival {
+    font-size: 15px;
+    padding: 10px 0 50px 0;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+}
+
+.tituloSecundario__festival {
+    font-size: 30px;
+    font-family: 'Mulish', sans-serif;
+    color: #333333;
+    text-align: center;
+}
+
+.primeraParte h5{
+    display: flex;
+    justify-content: center;
+}
+
+.primeraParte__imagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.segundaParte h5{
+    display: flex;
+    justify-content: center;
+}
+
+.primerContainer {
+    display: flex;
+    justify-content: center;
+    width: 80%; 
+    background-color: #333333;
+    padding: 20px 0 20px 0;
+}
+
+.imagen__festival {
+    width: 30%;
+    object-fit: cover;
 }
 
 /* FOOTER */
