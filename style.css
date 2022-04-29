@@ -44,14 +44,12 @@ p {
     height: 2px;
     width: 100%;
     background: #D3D3D3;
-    /*ANIMACION*/
     transform-origin: right;
     transform: scale(0);
     transition: transform 0.3s ease-in-out;
 }
 
 .barraNavegacion__texto:hover::after {
-    /*ANIMACION*/
     transform-origin: left;
     transform: scale(1);
 }
@@ -84,14 +82,12 @@ p {
     height: 2px;
     width: 100%;
     background: #D3D3D3;
-    /*ANIMACION*/
     transform-origin: right;
     transform: scale(0);
     transition: transform 0.3s ease-in-out;
 }
 
 .barraNavegacion__anchor:hover::after {
-    /*ANIMACION*/
     transform-origin: left;
     transform: scale(1);
 }
@@ -481,6 +477,7 @@ main {
     object-fit: cover;
     padding: 5px
 } */
+
 .CuerpoPrincipal__Galeria {
     margin-bottom: 100px;
 }
@@ -512,7 +509,64 @@ main {
 
 /* MAIN CONTACTO */
 
-.main__formulario {
+.main__contacto {
+    padding: 100px 0;
+    background-color: #F4F4F4;
+}
+
+.tituloPrincipal__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Mulish', sans-serif;
+    color: #333333;
+    font-size: 35px;
+    margin: 0 0 100px 0;
+}
+
+.tituloPrincipal__contacto h2{
+    font-family: 'Mulish', sans-serif;
+    color: #333333;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cuerpo__formulario {
+    display: flex;
+    width: 100%;
+}
+
+.columnaDerecha__contacto {
+    background-color: #6D6D6D;
+}
+
+.columnaIzquierda__contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.columnaIzquierda__contacto p{
+    text-align: start;
+}
+
+.tituloDias__formulario {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: solid 1px;
+    border-color: #333333;
+    font-family: 'Mulish', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #333333;
+    border-radius: 2px;
+    text-decoration: none;
+    margin: 40px 0 20px 0;
+}
+
+/* .main__formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -529,7 +583,7 @@ main {
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     color: #333333;
-}
+} */
 
 /* MAIN FESTIVAL */
 
@@ -588,7 +642,7 @@ main {
 
 .subtitulo__festival {
     font-size: 15px;
-    padding: 10px 0 50px 0;
+    padding: 10px 0 0 0;
     font-family: 'Mulish', sans-serif;
     text-align: center;
 }
@@ -598,6 +652,7 @@ main {
     font-family: 'Mulish', sans-serif;
     color: #333333;
     text-align: center;
+    padding-top: 50px;
 }
 
 .primeraParte h5{
@@ -618,8 +673,24 @@ main {
 .primerContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 80%; 
-    background-color: #333333;
+    background-color: #6D6D6D;
+    padding: 20px 0 20px 0;
+}
+
+.Container_texto {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(211, 211, 211, 0.25);
+}
+
+.sextoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+    background-color: #6D6D6D;
     padding: 20px 0 20px 0;
 }
 
