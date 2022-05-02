@@ -688,30 +688,67 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%; 
-    background-color: #6D6D6D;
+    width: 95%; 
+    background-color: #E0E2E1;
+    padding: 20px 0 20px 0;
+}
+
+.segundoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%; 
+    background-color: #D8D8D8;
+    padding: 20px 0 20px 0;
+}
+
+.tercerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%; 
+    background-color: #C9C9C9;
+    padding: 20px 0 20px 0;
+}
+
+.cuartoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%; 
+    background-color: #C1C1C1;
+    padding: 20px 0 20px 0;
+}
+
+.quintoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%; 
+    background-color: #B7B7B7;
     padding: 20px 0 20px 0;
 }
 
 .Container_texto {
     display: flex;
     justify-content: center;
-    background-color: rgb(211, 211, 211, 0.25);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-.sextoContainer {
+/* .segundoContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80%; 
     background-color: #6D6D6D;
     padding: 20px 0 20px 0;
-}
+} */
 
 .imagen__festival {
     width: 30%;
     object-fit: cover;
 }
+
 
 /* FOOTER */
 
@@ -989,6 +1026,37 @@ footer {
         object-fit: cover;
         padding: 10px;
     }
+
+    /* MAIN FESTIVAL */
+
+    .primerContainer {
+        width: 100%;
+    }
+
+    .segundoContainer {
+        width: 100%;
+    }
+
+    .tercerContainer {
+        width: 100%;
+    }
+
+    .cuartoContainer {
+        width: 100%;
+    }
+
+    .quintoContainer {
+        width: 100%;
+    }
+
+    .imagen__festival {
+        width: 50%;
+    }
+
+    .Container_texto {
+        margin: 50px 0 25px 0;
+    }
+    
     
     /* FOOTER */
 
