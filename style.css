@@ -831,6 +831,10 @@ footer {
         align-items: center;
     }
 
+    .navbar-toggler:focus {
+        color: #D3D3D3;
+    }
+
     .navbar-light .navbar-toggler {
         border-color: #D3D3D3;
     }
