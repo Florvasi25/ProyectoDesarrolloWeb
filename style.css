@@ -39,6 +39,7 @@ p {
     font-size: 25px;
     text-decoration: none;
     position: relative;
+    padding-bottom: 10px;
 }
 
 .barraNavegacion__texto::after {
@@ -73,7 +74,6 @@ p {
     font-size: 20px;
     text-decoration: none;
     font-family: 'Mulish', sans-serif;
-    padding: 10px;
     text-align: end;
     transition: background-color 0.5s;
     position: relative;
@@ -92,7 +92,7 @@ p {
     position: absolute;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 0px;
     height: 2px;
     width: 100%;
     background: #D3D3D3;
@@ -105,7 +105,6 @@ p {
     transform-origin: left;
     transform: scale(1);
 }
-
 
 .barraNavegacion__anchor:hover {
     font-weight: bold;
@@ -362,42 +361,6 @@ main {
     color: #333333;
 }
 
-/* .cuerpoMedio__QS {
-    height: fit-content;
-    width: 80%;
-    background-color: #6D6D6D;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 100px 0 100px 0;
-    align-items: center;
-    
-}
-
-.cuerpoMedio__cajaInferior {
-    width: 30%;
-    padding: 50px 0 50px 0;
-}
-
-.parrafoMedio__QS {
-    color: #D3D3D3;
-    font-family: 'Mulish', sans-serif;
-    font-size: 20px;
-    text-indent: 1.5em;
-}
-
-.cuerpoMedioQS__imagenes {
-    display: flex;
-    padding: 50px 0 50px 0;
-}
-
-.fotoMedioQS__1 {
-    height: 300px;
-}
-
-.fotoMedioQS__2 {
-    height: 300px;
-} */
-
 .cuerpoMedio__QS {
     height: fit-content;
     background-color: #6D6D6D;
@@ -456,41 +419,6 @@ main {
     font-family: 'Mulish', sans-serif;
     font-size: 30px;
 }
-
-/* .columnas {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.columnaIzquierda {
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 75px 0;
-}
-
-.columnaDerecha {
-    display: flex;
-    flex-direction: column;
-    padding: 75px 0 0 0;
-}
-
-.columnaFila {
-    display: flex;
-    flex-direction: row;
-}
-.imagenGaleria {
-    width: 350px;
-    object-fit: cover;
-    padding: 5px;
-}
-
-.imagenGaleria1 {
-    width: 710px;
-    object-fit: cover;
-    padding: 5px
-} */
 
 .CuerpoPrincipal__Galeria {
     margin-bottom: 100px;
@@ -580,63 +508,7 @@ main {
     margin: 40px 0 20px 0;
 }
 
-/* .main__formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.tituloSecundario__formulario {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-    color: #333333;
-    margin: 50px 0 20px 0;
-}
-
-.formulario {
-    font-family: 'Mulish', sans-serif;
-    font-size: 16px;
-    color: #333333;
-} */
-
 /* MAIN FESTIVAL */
-
-/* .main__festival {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0 0 0 300px;
-}
-
-.festival__texto {
-    display: flex;
-    flex-direction: column;
-}
-
-.tituloPrincipal__festival {
-    color: #333333;
-    font-size: 32px;
-    font-family: 'Quicksand', sans-serif;
-    margin: 50px 0 20px 0;
-}
-
-
-.tituloSecundario__festival {
-    margin: 20px 0 20px 0;
-    font-family: 'Mulish', sans-serif;
-
-}
-
-.festival {
-    font-family: 'Mulish', sans-serif;
-}
-
-.subtitulo__festival {
-    color: #333333;
-    font-size: 16px;
-    font-family: 'Quicksand', sans-serif;
-    margin: 0 0 20px 0;
-} */
 
 .main__festival {
     width: 100%;
@@ -685,7 +557,6 @@ main {
 }
 
 .primerContainer {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 95%; 
@@ -694,7 +565,7 @@ main {
 }
 
 .segundoContainer {
-    display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     width: 95%; 
@@ -703,7 +574,6 @@ main {
 }
 
 .tercerContainer {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 95%; 
@@ -712,7 +582,7 @@ main {
 }
 
 .cuartoContainer {
-    display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     width: 95%; 
@@ -721,7 +591,6 @@ main {
 }
 
 .quintoContainer {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 95%; 
@@ -729,26 +598,33 @@ main {
     padding: 20px 0 20px 0;
 }
 
-.Container_texto {
+.container__texto {
     display: flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
-
-/* .segundoContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%; 
-    background-color: #6D6D6D;
-    padding: 20px 0 20px 0;
-} */
 
 .imagen__festival {
     width: 30%;
     object-fit: cover;
 }
 
+.texto__derecha {
+    font-size:  20px;
+    font-family: 'Mulish', sans-serif;
+    color: #333333;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+
+.texto__derecha:hover {
+    font-size:  20px;
+    font-family: 'Mulish', sans-serif;
+    color: #333333;
+    font-weight: bold;
+    transform: scale(1.1);
+}
 
 /* FOOTER */
 
@@ -963,17 +839,6 @@ footer {
         padding: 50px 0 0 0;
     }
 
-    /* .cuerpoMedio__QS {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding: 50px;
-    }
-
-    .cuerpoMedio__cajaInferior {
-        width: 70%;
-    } */
-
     .cuerpoMedio__QS {
         display: flex;
         flex-direction: column;
@@ -989,14 +854,6 @@ footer {
     }
 
     /* MAIN GALERIA */
-
-    /* .columnaDerecha {
-        padding: 0 0 100px 0;
-    }
-
-    .columnaIzquierda {
-        padding: 0;
-    } */
 
     .CuerpoPrincipal__Galeria {
         display: flex;
@@ -1053,7 +910,7 @@ footer {
         width: 50%;
     }
 
-    .Container_texto {
+    .container__texto {
         margin: 50px 0 25px 0;
     }
     
@@ -1248,23 +1105,6 @@ footer {
         height: auto;
     }
 
-    /* MAIN GALERIA */
-
-
-    /* .columnaDerecha {
-        padding: 0 0 100px 0;
-    }
-
-    .imagenGaleria {
-        width: 50%;
-        padding: 10px 0 0 0;
-    }
-
-    .imagenGaleria1 {
-        width: 100%;
-        padding: 10px 0 0 0;
-    } */
-
     .columnaIzquierda {
         align-items: center;
     }
@@ -1285,6 +1125,46 @@ footer {
         width: 100vw;
         object-fit: cover;
         padding: 10px;
+    }
+
+    /* MAIN FESTIVAL */
+
+    .primerContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .segundoContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .tercerContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .cuartoContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .quintoContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .imagen__festival {
+        width: 100%;
+    }
+
+    .container__texto {
+        margin: 30px 0 30px 0;
     }
 
     /* FOOTER */
