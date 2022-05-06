@@ -113,7 +113,7 @@ p {
 
 /* CUERPO SUPERIOR INDEX */
 
-.cuerpo__superior {
+.indexSuperior {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -121,7 +121,7 @@ p {
     background-color: #F4F4F4;
 }
 
-.tituloPrincipal__index {
+.indexSuperior__titulo {
     color: #333333;
     font-size: 40px;
     font-weight: bold;
@@ -129,7 +129,7 @@ p {
     margin: 100px 0 10px 0;
 }
 
-.subtitulo__index {
+.indexSuperior__subtitulo {
     color: #333333;
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
@@ -142,39 +142,39 @@ h5 {
     align-self: center;
 }
 
-#fotosPrincipal__index {
+#index__fotosCarrousel {
     align-self: center;
     width: 70%;
 }
 
 /* CUERPO MEDIO INDEX */
 
-.cuerpo__medio {
+.indexMedio {
     background-color: #D8D8D8;
     padding: 100px 0 100px 0;
     margin: 50px 0 0 0;
 }
 
-.columnas__medio {
+.indexMedio__columnas {
     margin: 0;
 }
 
-.fotos__medio {
+.indexMedio__columnasFotos {
     display: flex;
     flex-wrap: wrap;
 }
 
-.fotoMedio__index{
+.indexMedio__columnasFotos__foto{
     width: 450px;
     padding: 10px 0 0 10px;
     box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493);}
 
-.texto__medio {
+.indexMedio__columnasCajaTexto {
     display: flex;
     flex-direction: column;
 }
 
-.cajaTexto {
+.indexMedio__columnasCaja {
     width: 40%;
 }
 
@@ -221,7 +221,7 @@ h5 {
 
 /* CUERPO INFERIOR INDEX */
 
-.cuerpo__inferior {
+.indexInferior {
     width: 80%;
     height: fit-content;
     display: flex;
@@ -229,18 +229,18 @@ h5 {
     padding: 100px 0 100px 0;
 }
 
-.cajaTexto__inferior {
+.indexInferior__caja {
     width: 60%;
 }
 
-.texto__inferior {
+.indexInferior__texto {
     display: flex;
     justify-content: center;
     font-size: 25px;
     padding: 0 0 50px 0;
 }
 
-.botonGaleria__index {
+.indexInferior__textoBoton {
     align-self: center;
     padding: 15px 25px 15px 25px;
     border: solid 1px;
@@ -256,13 +256,13 @@ h5 {
 
 }
 
-.botonGaleria__index:hover {
+.indexInferior__textoBoton:hover {
     color: #D3D3D3;
     font-weight: bolder;
     background-color: #165c85;
 }
 
-.subtituloInferior__index {
+.indexInferior__cajaTexto {
     font-family: 'Mulish', sans-serif;
     color: #333333;
     margin: 0 0 0 20px;
@@ -273,12 +273,12 @@ h5 {
     width: 80%;
 }
 
-.imagenes__inferior {
+.indexInferior__imagen {
     display: flex;
     justify-content: center;
 }
 
-.fotoInferior__1 {
+.indexInferior__imagenFoto {
     width: 80%;
     box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493);
 }
@@ -441,7 +441,7 @@ main {
     padding: 20px 10px 20px 10px;
 }
 
-.footer__lista {
+.footer__hvLista {
     column-gap: 20px;
 }
 
@@ -752,7 +752,7 @@ main {
 
 /* FOOTER */
 
-footer {
+.footer {
     background-color: #333333;
     display: flex;
     flex-wrap: wrap;
@@ -760,56 +760,56 @@ footer {
     align-items: center;
 }
 
-.footer__logoTexto {
+.footer__logo {
     display: flex;
     margin: 0 0 0 50px;
 }
 
-.footer__imagen {
+.footer__logoImagen {
     width: 30px;
     padding: 75px 0 75px 0;
 }
 
-.footer__logoTexto__div {
+.footer__logoTexto {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.footer__texto {
+.footer__logoTextoP {
     font-family: 'Mulish', sans-serif;
     color: #D3D3D3;
     margin-left: 10px;
     font-size: 20px;
 }
 
-.footer__hipervinculo {
+.footer__hv {
     display: flex;
     margin: 0 50px 0 0;
 }
 
-.footer__lista {
+.footer__hvLista {
     list-style: none;
     display: flex;
     padding: 0 0 0 20px;
 }
 
-.logoHipervinculoRedes {
+.footer__hvListaLogo {
     height: 40px;
     margin: 0 15px 0 15px;
     transition: transform 0.5s;
 }
 
-.logoHipervinculoRedes:hover {
+.footer__hvListaLogo:hover {
     transform: scale(1.2);
 }
 
-.logoHipervinculoRedesG {
+.footer__hvListaLogoG {
     height: 40px;
     margin: 0 15px 0 15px;
 }
 
-.footer__email {
+.footer__hvListaEmail {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -818,7 +818,7 @@ footer {
     font-size: 15px;
 }
 
-.footer__direccion {
+.footer__hvListaDireccion {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -882,40 +882,40 @@ footer {
 
     /* MAIN INDEX */
 
-    .tituloPrincipal__index {
+    .indexSuperior__titulo {
         font-size: 200%;
     }
 
-    .columnas__medio {
+    .indexMedio__columnas {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .cajaTexto {
+    .indexMedio__columnasCaja {
         width: 80%;
         padding: 0;
     }
 
-    .fotos__medio {
+    .indexMedio__columnasFotos {
         width: 80%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
-    .fotoMedio__index {
+    .indexMedio__columnasFotos__foto {
         width: 50%;
     }
 
-    .texto__inferior {
+    .indexInferior__texto {
         margin: 0 0 0 0;
     }
 
-    .imagenes__inferior {
+    .indexInferior__imagen {
         align-self: center;
     }
 
-    .fotoInferior__1 {
+    .indexInferior__imagenFoto {
         padding: 0;
     }
 
@@ -1058,22 +1058,22 @@ footer {
     
     /* FOOTER */
 
-    .footer__hipervinculo {
+    .footer__hv {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         margin: 0 30px 30px 0;
     }
 
-    .footer__lista {
+    .footer__hvLista {
         padding: 0 0 0 10px;
     }
 
-    .footer__email{
+    .footer__hvListaEmail{
         font-size: 13px;
     }
 
-    .footer__direccion {
+    .footer__hvListaDireccion {
         font-size: 13px;
     }
 
@@ -1109,22 +1109,22 @@ footer {
 
     /* MAIN INDEX */
 
-    .tituloPrincipal__index {
+    .indexSuperior__titulo {
         margin: 50px 0 0 0;
         font-size: 20px;
         text-align: center;
     }
 
-    .subtitulo__index {
+    .indexSuperior__subtitulo {
         font-size: 15px;
         padding: 10px 0 0 0;
     }
 
-    #fotosPrincipal__index {
+    #index__fotosCarrousel {
         width: 100%;
     }
 
-    .cuerpo__medio {
+    .indexMedio {
         padding: 50px 0 50px 0;
     }
 
@@ -1143,44 +1143,44 @@ footer {
         padding: 15px;
     }
 
-    .fotos__medio {
+    .indexMedio__columnasFotos {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .fotoMedio__index {
+    .indexMedio__columnasFotos__foto {
         width: 80%;
         padding: 5px 0 0 0;
     }
 
-    .cajaTexto {
+    .indexMedio__columnasCaja {
         width: 80%;
         padding: 0;
     }
 
-    .cuerpo__inferior {
+    .indexInferior {
         padding: 50px 0 50px 0;
     }
 
-    .texto__inferior {
+    .indexInferior__texto {
         padding: 0 0 30px 0;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .cajaTexto__inferior {
+    .indexInferior__caja {
         width: 80%;
         padding: 0;
     }
 
-    .subtituloInferior__index {
+    .indexInferior__cajaTexto {
         font-size: 15px;
         padding: 0 0 30px 0;
         text-align: center;
     }
 
-    .fotoInferior__1 {
+    .indexInferior__imagenFoto {
         width: 100%;
         padding: 0;
     }
@@ -1190,7 +1190,7 @@ footer {
         padding: 0;
     }
 
-    .botonGaleria__index {
+    .indexInferior__textoBoton {
         font-size: 20px;
         padding: 15px;
     }
@@ -1328,17 +1328,17 @@ footer {
 
     /* FOOTER */
 
-    .footer__hipervinculo {
+    .footer__hv {
         padding: 0 0 0 0;
         margin: 0 0 50px 0;
     }
     
-    .footer__logoTexto {
+    .footer__logo {
         align-self: center;
         margin: 0;
     }
 
-    .footer__lista {
+    .footer__hvLista {
         padding: 30px 0 0 0;
     }
 }
