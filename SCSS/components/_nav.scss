@@ -91,75 +91,81 @@
     }
 }
 
-/* MEDIUM MEDIUM MEDIUM */
+/* MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM */
 
-.barraNavegacion{
-    background-color: #165c85;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: fit-content;
-    padding: 20px 0 20px 0;
+@media only screen and (max-width: 992px) {
 
-    &__imagen {
-        width: 30px;
+    .barraNavegacion{
+        background-color: #165c85;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: fit-content;
+        padding: 20px 0 20px 0;
+    
+        &__imagen {
+            width: 30px;
+        }
+    
+        &__anchor::after {
+            display: none;
+        }
+    
+        &__texto::after {
+            display: none;
+        }
     }
-
-    &__anchor::after {
+    
+    #navbarNav .navbar-collapse .collpase{
+        display: flex;
+        justify-content: end;
+    }
+    
+    .nav__lg {
         display: none;
     }
-
-    &__texto::after {
-        display: none;
+    
+    .nav__mdsm {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar-toggler:focus {
+        color: #D3D3D3;
+    }
+    
+    .navbar-light .navbar-toggler {
+        border-color: #D3D3D3;
+    
+        &-icon {
+            background-image: url(../Imagenes/menuHamburguesa.png);
+        }
     }
 }
 
-#navbarNav .navbar-collapse .collpase{
-    display: flex;
-    justify-content: end;
-}
+/* SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
 
-.nav__lg {
-    display: none;
-}
+@media only screen and (max-width: 576px) {
 
-.nav__mdsm {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-toggler:focus {
-    color: #D3D3D3;
-}
-
-.navbar-light .navbar-toggler {
-    border-color: #D3D3D3;
-
-    &-icon {
-        background-image: url(../Imagenes/menuHamburguesa.png);
+    .barraNavegacion{
+        background-color: #165c85;
+        width: 100%;
+    
+        &__texto {
+            font-size: 15px;
+        }
+    
+        &__lista {
+            padding: 0;
+        }
+    
+        &__anchor {
+            font-size: 15px;
+            padding: 10px 10px 30px 10px;
+        }
     }
-}
-
-/* SMALL SMALL SMALL */
-
-.barraNavegacion{
-    background-color: #165c85;
-    width: 100%;
-
-    &__texto {
-        font-size: 15px;
+    
+    .container {
+        margin: 0 50px 0 50px;
     }
-
-    &__lista {
-        padding: 0;
-    }
-
-    &__anchor {
-        font-size: 15px;
-        padding: 10px 10px 30px 10px;
-    }
-}
-
-.container {
-    margin: 0 50px 0 50px;
 }
