@@ -1,9 +1,29 @@
+/* SUBVARIABLES */
+/* VARIABLES */
+.QSTitulo h1 {
+  font-family: "Mulish", sans-serif;
+  color: #333333;
+  font-size: 30px;
+  text-align: center; }
+
+.QS {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0; }
 
 p {
   margin: 0; }
+
+main {
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .barraNavegacion {
   background-color: #165c85; }
@@ -134,6 +154,7 @@ p {
     margin: 100px 0 10px 0; }
   .indexSuperior__subtitulo {
     color: #333333;
+    font-size: 25px;
     font-family: "Mulish", sans-serif;
     margin: 0 0 20px 0; }
 
@@ -316,6 +337,123 @@ h5 {
     .indexInferior__imagenFoto {
       width: 100%;
       padding: 0; } }
+
+.QSTitulo h1 {
+  margin: 100px 0 100px 0; }
+
+.QSSuperior {
+  display: flex;
+  justify-content: space-between;
+  background-color: #D8D8D8;
+  height: fit-content;
+  padding: 50px 100px 50px 100px; }
+  .QSSuperior__imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .QSSuperior__imagenesFoto {
+      width: 400px;
+      margin: 0 0 10px 0;
+      box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
+  .QSSuperior__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .QSSuperior__textoSecundario {
+      font-size: 25px;
+      font-family: "Mulish", sans-serif;
+      color: #333333;
+      text-align: center;
+      padding: 0 0 30px 0; }
+    .QSSuperior__textoParrafo {
+      font-size: 20px;
+      font-family: "Mulish", sans-serif;
+      color: #333333;
+      text-align: none;
+      padding: 0 0 0 50px;
+      text-indent: 1.5em; }
+    .QSSuperior__textoSubtitulo {
+      font-size: 20px;
+      font-family: "Mulish", sans-serif;
+      color: #333333;
+      text-align: center;
+      padding: 30px 0 0 0; }
+    .QSSuperior__textoFirma {
+      font-size: 20px;
+      font-family: "Mulish", sans-serif;
+      color: #333333;
+      text-align: end;
+      padding: 50px 100px 0 0; }
+  .QSSuperior992 {
+    display: none; }
+
+.QSMedio {
+  height: fit-content;
+  background-color: #6D6D6D;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 0 100px 0;
+  align-items: center; }
+  .QSMedio__caja {
+    width: 30%;
+    padding: 50px 0 50px 0; }
+    .QSMedio__cajaParrafo {
+      font-size: 20px;
+      font-family: "Mulish", sans-serif;
+      color: #D3D3D3;
+      text-align: none;
+      text-indent: 1.5em; }
+    .QSMedio__cajaImagenes {
+      gap: 15px;
+      padding: 100px 0 100px 0; }
+      .QSMedio__cajaImagenesFoto {
+        height: 50vh;
+        box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
+
+@media only screen and (max-width: 992px) {
+  .QSSuperior {
+    display: none; }
+    .QSSuperior992 {
+      display: flex;
+      flex-direction: column;
+      background-color: #D3D3D3;
+      padding: 50px; }
+    .QSSuperior__imagenes {
+      display: flex;
+      align-items: center; }
+      .QSSuperior__imagenesFoto {
+        width: 80%; }
+    .QSSuperior__texto {
+      width: 80%;
+      padding: 30px 0 30px 0; }
+      .QSSuperior__textoParrafo {
+        padding: 0; }
+      .QSSuperior__textoFirma {
+        align-self: end;
+        padding: 50px 0 0 0; }
+  .QSMedio {
+    display: flex;
+    flex-direction: column; }
+    .QSMedio__caja {
+      width: 70%;
+      padding: 100px 0 50px 0; }
+      .QSMedio__cajaImagenes {
+        padding: 0 0 100px 0; } }
+
+@media only screen and (max-width: 576px) {
+  .QSSuperior992 {
+    padding: 50px 0 50px 0; }
+  .QSSuperior__imagenesFoto {
+    width: 100%; }
+  .QSSuperior__textoFirma {
+    padding-right: 20px; }
+  .QSMedio {
+    width: 100%;
+    padding: 0;
+    margin: 50px 0 50px 0; }
+    .QSMedio__cajaImagenesFoto {
+      width: 45vw;
+      height: auto; } }
 
 .footer {
   background-color: #333333;

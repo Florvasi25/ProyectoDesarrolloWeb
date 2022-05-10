@@ -596,42 +596,6 @@ main {
     font-weight: bolder;
 }
 
-
-/* .cuerpo__formulario {
-    display: flex;
-    width: 100%;
-}
-
-.columnaDerecha__contacto {
-    background-color: #6D6D6D;
-}
-
-.columnaIzquierda__contacto {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-}
-
-.columnaIzquierda__contacto p{
-    text-align: start;
-}
-
-.tituloDias__formulario {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    border: solid 1px;
-    border-color: #333333;
-    font-family: 'Mulish', sans-serif;
-    font-size: 25px;
-    font-weight: bolder;
-    color: #333333;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: 40px 0 20px 0;
-} */
-
 /* MAIN FESTIVAL */
 
 .main__festival {
@@ -921,7 +885,7 @@ main {
 
     /* MAIN QUIENES SOMOS */
 
-    .cuerpoSuperior__QS {
+    .QSSuperior {
         display: none;
     }
 
@@ -936,12 +900,12 @@ main {
         padding: 50px;
     }
 
-    .cuerpoSuperiorQS__imagenes {
+    .QSSuperior__imagenes {
         display: flex;
         align-items: center;
     }
 
-    .imagenSuperior__QS {
+    .QSSuperior__imagenesFoto {
         width: 80%;
     }
 
@@ -1203,7 +1167,7 @@ main {
         text-align: center;
     }
 
-    .cuerpoSuperior__QS {
+    .QSSuperior {
         display: none;
     }
 
@@ -1215,7 +1179,7 @@ main {
         font-size: 30px;
     }
 
-    .imagenSuperior__QS {
+    .QSSuperior__imagenesFoto {
         width: 100%;
     }
 
