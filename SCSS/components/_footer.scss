@@ -8,22 +8,18 @@
     &__logo {
         display: flex;
         margin: 0 0 0 50px;
+        padding: 75px 0 75px 0;
 
         &Imagen {
             width: 30px;
-            padding: 75px 0 75px 0;
         }
         
         &Texto {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flexcolumn (none);
 
-            &P {
-                font-family: 'Mulish', sans-serif;
-                color: #D3D3D3;
+            & p {
+                @include parrafo ($color-letra-FO, none);
                 margin-left: 10px;
-                font-size: 20px;
             }
         }
     } 
@@ -54,18 +50,14 @@
             }
 
             &Email {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                @include flexcolumn (none);
                 font-family: 'Mulish', sans-serif;
                 color: #D3D3D3;
                 font-size: 15px;
             }
 
             &Direccion {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                @include flexcolumn (none);
                 font-family: 'Mulish', sans-serif;
                 color: #D3D3D3;
                 font-size: 15px;
@@ -85,7 +77,7 @@
         margin: 0 30px 30px 0;
     
         &Lista {
-            padding: 0 0 0 10px;
+            padding: 30px 0 0 10px;
     
             &Email{
                 font-size: 13px;

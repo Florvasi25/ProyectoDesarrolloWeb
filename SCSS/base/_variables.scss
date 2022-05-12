@@ -31,17 +31,24 @@ $tamanio-tipografia:(
     text-align: $align;
 };
 
+@mixin flexcolumn ($align) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: $align;
+};
+
 %titulo {
     font-family: $fuente-principal;
     color: $color-letra-FC;
     font-size: map-get($tamanio-tipografia, titulo);
     text-align: center;
-}
-
+};
 
 %main {
-    background-color: #f4f4f4;
+    background-color: $color-principal;
     display: flex;
     flex-direction: column;
     align-items: center;
 };
+
