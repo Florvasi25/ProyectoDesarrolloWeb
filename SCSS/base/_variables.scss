@@ -12,7 +12,6 @@ $tamanio-tipografia:(
     titulo: 30px,
     subtitulo: 25px,
     parrafo: 20px,
-    boton: 20px,
 );
 
 /* VARIABLES */
@@ -36,6 +35,20 @@ $tamanio-tipografia:(
     flex-direction: column;
     justify-content: center;
     align-items: $align;
+};
+
+@mixin flexrow ($justify) {
+    display: flex;
+    justify-content: $justify;
+};
+
+@mixin container ($direction, $color) {
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    background-color: $color;
+    padding: 20px 0 20px 0;
 };
 
 %titulo {

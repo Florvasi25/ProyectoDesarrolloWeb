@@ -1,12 +1,12 @@
 /* SUBVARIABLES */
 /* VARIABLES */
-.indexMed__columnBoxTexto h2, .QSTitulo h1 {
+.indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1 {
   font-family: "Mulish", sans-serif;
   color: #333333;
   font-size: 30px;
   text-align: center; }
 
-.index, .QS {
+.index, .QS, .fest {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
@@ -16,23 +16,30 @@
   margin: 0;
   padding: 0; }
 
+/* GOOGLE FONTS
+
+font-family: 'Mulish', sans-serif;
+font-family: 'Quicksand', sans-serif;
+
+*/
 p {
   margin: 0; }
 
 h5 {
   margin: 25px 0 50px 0;
   font-size: 16px;
-  align-self: center; }
+  text-align: center; }
 
 .boton {
+  font-size: 20px;
+  font-family: "Mulish", sans-serif;
+  color: #333333;
+  text-align: none;
   align-self: center;
   padding: 15px 25px 15px 25px;
   border: solid 1px;
   border-color: #333333;
-  font-family: 'Mulish', sans-serif;
-  font-size: 20px;
   font-weight: bolder;
-  color: #333333;
   border-radius: 5px;
   text-decoration: none;
   margin: 40px 0 20px 0;
@@ -166,13 +173,13 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .indexSuperior__titulo {
+    .indexSuperior h1 {
       color: #333333;
       font-size: 40px;
       font-weight: bold;
       font-family: "Mulish", sans-serif;
       margin: 100px 0 10px 0; }
-    .indexSuperior__subtitulo {
+    .indexSuperior h3 {
       font-size: 25px;
       font-family: "Mulish", sans-serif;
       color: #333333;
@@ -187,7 +194,7 @@ h5 {
       .indexMed__columnFotos {
         display: flex;
         flex-wrap: wrap; }
-        .indexMed__columnFotos__foto {
+        .indexMed__columnFotos img {
           width: 450px;
           padding: 10px 0 0 10px;
           box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
@@ -206,22 +213,26 @@ h5 {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    padding: 100px 0 100px 0; }
+    justify-content: center;
+    align-items: none;
+    padding: 50px 0 100px 0; }
     .indexInferior__texto {
       display: flex;
       justify-content: center;
-      font-size: 25px;
       padding: 0 0 50px 0; }
     .indexInferior__caja {
       width: 60%; }
-      .indexInferior__cajaTexto {
-        font-family: 'Mulish', sans-serif;
+      .indexInferior__caja p {
+        font-size: 20px;
+        font-family: "Mulish", sans-serif;
         color: #333333;
-        margin: 0 0 0 20px; }
+        text-align: none;
+        align-items: center;
+        margin: 40px 0 0 20px; }
     .indexInferior__imagen {
       display: flex;
       justify-content: center; }
-      .indexInferior__imagenFoto {
+      .indexInferior__imagen img {
         width: 80%;
         box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
 
@@ -231,14 +242,11 @@ h5 {
 /* MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM */
 @media only screen and (max-width: 992px) {
   /* MAIN INDEX */
-  .indexSuperior__titulo {
+  .indexSuperior h1 {
     font-size: 200%; }
   .indexMed__column {
     display: flex;
     flex-direction: column-reverse; }
-    .indexMed__columnBox {
-      width: 80%;
-      padding: 0; }
     .indexMed__columnFotos {
       width: 80%;
       display: flex;
@@ -246,6 +254,9 @@ h5 {
       justify-content: space-around; }
       .indexMed__columnFotos__foto {
         width: 50%; }
+    .indexMed__columnBox {
+      width: 80%;
+      padding: 0; }
   .indexInferior__texto {
     margin: 0 0 0 0; }
   .indexInferior__imagen {
@@ -257,11 +268,11 @@ h5 {
 @media only screen and (max-width: 576px) {
   #index__fotosCarrousel {
     width: 100%; }
-  .indexSuperior__titulo {
+  .indexSuperior h1 {
     margin: 50px 0 0 0;
     font-size: 20px;
     text-align: center; }
-  .indexSuperior__subtitulo {
+  .indexSuperior h3 {
     font-size: 15px;
     padding: 10px 0 0 0; }
   .indexMed {
@@ -269,21 +280,12 @@ h5 {
     .indexMed__columnFotos {
       display: flex;
       flex-wrap: wrap; }
-      .indexMed__columnFotos__foto {
-        width: 80%;
+      .indexMed__columnFotos img {
+        width: 100%;
         padding: 5px 0 0 0; }
     .indexMed__columnBox {
       width: 80%;
       padding: 0; }
-  .tituloSecundario__index {
-    font-size: 20px; }
-  .subtituloMed__index {
-    font-size: 15px;
-    text-align: center; }
-  .botonVerMas__index {
-    margin: 20px 0 20px 0;
-    font-size: 20px;
-    padding: 15px; }
   .indexInferior {
     padding: 50px 0 50px 0; }
     .indexInferior__texto {
@@ -297,10 +299,9 @@ h5 {
     .indexInferior__caja {
       width: 80%;
       padding: 0; }
-      .indexInferior__cajaTexto {
-        font-size: 15px;
-        padding: 0 0 30px 0;
-        text-align: center; }
+      .indexInferior__caja p {
+        text-align: center;
+        font-size: 20px; }
     .indexInferior__imagenFoto {
       width: 100%;
       padding: 0; } }
@@ -317,7 +318,8 @@ h5 {
   .QSSuperior__imagenes {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    align-items: none; }
     .QSSuperior__imagenesFoto {
       width: 400px;
       margin: 0 0 10px 0;
@@ -325,7 +327,8 @@ h5 {
   .QSSuperior__texto {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    align-items: none; }
     .QSSuperior__textoSecundario {
       font-size: 25px;
       font-family: "Mulish", sans-serif;
@@ -421,6 +424,93 @@ h5 {
     .QSMedio__cajaImagenesFoto {
       width: 45vw;
       height: auto; } }
+
+.fest {
+  padding: 100px 0 100px 0; }
+  .festSup h1 {
+    display: flex;
+    justify-content: center; }
+  .festSup h3 {
+    font-size: 20px;
+    font-family: "Mulish", sans-serif;
+    color: #333333;
+    text-align: center; }
+  .festSup__card h2 {
+    font-size: 25px;
+    font-family: "Mulish", sans-serif;
+    color: #333333;
+    text-align: center;
+    padding-top: 50px; }
+  .festSup__cardPrimer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    background-color: #E0E2E1;
+    padding: 20px 0 20px 0; }
+  .festSup__cardSegundo {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    background-color: #D8D8D8;
+    padding: 20px 0 20px 0; }
+  .festSup__cardTercer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    background-color: #C9C9C9;
+    padding: 20px 0 20px 0; }
+  .festSup__cardCuarto {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    background-color: #C1C1C1;
+    padding: 20px 0 20px 0; }
+  .festSup__cardQuinto {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    background-color: #B7B7B7;
+    padding: 20px 0 20px 0; }
+  .festSup__card img {
+    width: 30%;
+    object-fit: cover; }
+  .festSup__cardText {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px; }
+    .festSup__cardText p {
+      font-size: 20px;
+      font-family: "Mulish", sans-serif;
+      color: #333333;
+      text-align: none;
+      font-weight: bold;
+      transition: transform 0.5s; }
+      .festSup__cardText p:hover {
+        transform: scale(1.1); }
+
+@media only screen and (max-width: 992px) {
+  .festSup__card {
+    width: 100%; }
+    .festSup__card img {
+      width: 50%; }
+    .festSup__cardText {
+      margin: 50px 0 25px 0; } }
+
+@media only screen and (max-width: 576px) {
+  .festSup__card {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px; }
+    .festSup__card img {
+      width: 100%; }
+    .festSup__cardText {
+      margin: 30px 0 30px 0; } }
 
 .footer {
   background-color: #333333;

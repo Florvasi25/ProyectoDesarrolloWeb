@@ -7,7 +7,7 @@
         width: 100%;
         @include flexcolumn (center);
     
-        &__titulo {
+        & h1{
             color: $color-letra-FC;
             font-size: 40px;
             font-weight: bold;
@@ -15,7 +15,7 @@
             margin: 100px 0 10px 0;
         }
     
-        &__subtitulo {
+        & h3 {
             @include subtitulo ($color-letra-FC, center);
             margin: 0 0 20px 0;
         }
@@ -36,7 +36,7 @@
                 display: flex;
                 flex-wrap: wrap;
     
-                &__foto{
+                & img{
                     width: 450px;
                     padding: 10px 0 0 10px;
                     box-shadow: $shadow;
@@ -67,24 +67,21 @@
     
     &Inferior {
         height: fit-content;
-        display: flex;
-        flex-direction: column;
-        padding: 100px 0 100px 0;
+        @include flexcolumn (none);
+        padding: 50px 0 100px 0;
     
         &__texto {
-            display: flex;
-            justify-content: center;
-            font-size: 25px;
+            @include flexrow (center);
             padding: 0 0 50px 0;
         }
     
         &__caja {
             width: 60%;
     
-            &Texto {
-                font-family: 'Mulish', sans-serif;
-                color: #333333;
-                margin: 0 0 0 20px;
+            & p {
+                @include parrafo ($color-letra-FC, none);
+                align-items: center;
+                margin: 40px 0 0 20px;
             }
         }
     
@@ -92,7 +89,7 @@
             display: flex;
             justify-content: center;
     
-            &Foto {
+            & img {
                 width: 80%;
                 box-shadow: $shadow;
             }
@@ -110,18 +107,13 @@
 
     /* MAIN INDEX */
 
-    .indexSuperior__titulo {
+    .indexSuperior h1{
         font-size: 200%;
     }
 
     .indexMed__column {
         display: flex;
         flex-direction: column-reverse;
-
-        &Box {
-            width: 80%;
-            padding: 0;
-        }
 
         &Fotos {
             width: 80%;
@@ -132,7 +124,11 @@
             &__foto {
                 width: 50%;
             }
-            
+        }
+
+        &Box {
+            width: 80%;
+            padding: 0;
         }
     }
 
@@ -157,15 +153,18 @@
         width: 100%;
     }
 
-    .indexSuperior__titulo {
-        margin: 50px 0 0 0;
-        font-size: 20px;
-        text-align: center;
-    }
-    
-    .indexSuperior__subtitulo {
-        font-size: 15px;
-        padding: 10px 0 0 0;
+    .indexSuperior {
+         
+        & h1 {
+            margin: 50px 0 0 0;
+            font-size: 20px;
+            text-align: center;    
+        }
+
+        & h3 {
+            font-size: 15px;
+            padding: 10px 0 0 0;    
+        }
     }
     
     .indexMed {
@@ -175,8 +174,8 @@
             display: flex;
             flex-wrap: wrap;
     
-            &__foto {
-                width: 80%;
+            & img {
+                width: 100%;
                 padding: 5px 0 0 0;
             }  
         }
@@ -185,21 +184,6 @@
             width: 80%;
             padding: 0;
         }
-    }
-    
-    .tituloSecundario__index {
-        font-size: 20px;
-    }
-    
-    .subtituloMed__index {
-        font-size: 15px;
-        text-align: center;
-    }
-    
-    .botonVerMas__index {
-        margin: 20px 0 20px 0;
-        font-size: 20px;
-        padding: 15px;
     }
     
     .indexInferior {
@@ -221,10 +205,9 @@
             width: 80%;
             padding: 0;
     
-            &Texto {
-                font-size: 15px;
-                padding: 0 0 30px 0;
+            & p {
                 text-align: center;
+                font-size: 20px;
             }
         }
     

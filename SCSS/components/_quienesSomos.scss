@@ -7,17 +7,14 @@
     }
 
     &Superior {
-        display: flex;
-        justify-content: space-between;
+        @include flexrow (space-between);
         background-color: #D8D8D8;
         height: fit-content;
         padding: 50px 100px 50px 100px;
     
         &__imagenes {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-    
+            @include flexcolumn (none);
+
             &Foto {
                 width: 400px;
                 margin: 0 0 10px 0;
@@ -26,9 +23,7 @@
         }
     
         &__texto {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flexcolumn (none);
     
             &Secundario {
                 @include subtitulo($color-letra-FC, center);
@@ -60,8 +55,7 @@
     &Medio {
         height: fit-content;
         background-color: #6D6D6D;
-        display: flex;
-        justify-content: space-evenly;
+        @include flexrow (space-evenly);
         margin: 100px 0 100px 0;
         align-items: center;
 
