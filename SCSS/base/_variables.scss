@@ -11,9 +11,9 @@ $shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493);
 $fuente-principal: 'Mulish', sans-serif;
 
 $tamanio-tipografia:(
-    titulo: 30px,
+    titulo: 35px,
     subtitulo: 25px,
-    parrafo: 20px,
+    parrafo: 15px,
 );
 
 /* VARIABLES */
@@ -23,6 +23,7 @@ $tamanio-tipografia:(
     font-family: $fuente-principal;
     color: $color;
     text-align: $align;
+    font-weight: bold
 };
 
 @mixin parrafo ($color, $align) {
@@ -30,6 +31,7 @@ $tamanio-tipografia:(
     font-family: $fuente-principal;
     color: $color;
     text-align: $align;
+    font-weight: bold;
 };
 
 @mixin flexcolumn ($align) {
@@ -51,8 +53,17 @@ $tamanio-tipografia:(
     width: 95%;
     background-color: $color;
     padding: 20px 0 20px 0;
+    font-weight: bolder;
 };
 
+@mixin border ($alignself, $margin) {
+    border: solid 1px;
+    border-color: $color-letra-FC;
+    border-radius: 5px;
+    padding: 15px 25px 15px 25px;
+    align-self: $alignself;
+    margin: $margin;
+}
 %titulo {
     font-family: $fuente-principal;
     color: $color-letra-FC;

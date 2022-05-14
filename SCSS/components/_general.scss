@@ -22,19 +22,14 @@ h5 {
 
 .boton {
     @include parrafo ($color-letra-FC, none);
-    align-self: center;
-    padding: 15px 25px 15px 25px;
-    border: solid 1px;
-    border-color: #333333;
-    font-weight: bolder;
-    border-radius: 5px;
+    @include border(center, 40px 0 20px 0);
     text-decoration: none;
-    margin: 40px 0 20px 0;
     transition: color 0.5s, background-color 0.5s, border-color 0.5s;
 
     &:hover {
         color: #D3D3D3;
         font-weight: bolder;
         background-color: #165c85;
+        cursor: pointer;
     }
 }

@@ -1,13 +1,13 @@
 /* COLORES */
 /* TIPOGRAFIAS */
 /* VARIABLES */
-.indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1 {
+.indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
   font-family: "Mulish", sans-serif;
   color: #333333;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center; }
 
-.index, .QS, .fest, .galeria {
+.index, .QS, .fest, .galeria, .contacto {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
@@ -32,23 +32,24 @@ h5 {
   text-align: center; }
 
 .boton {
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Mulish", sans-serif;
   color: #333333;
   text-align: none;
-  align-self: center;
-  padding: 15px 25px 15px 25px;
+  font-weight: bold;
   border: solid 1px;
   border-color: #333333;
-  font-weight: bolder;
   border-radius: 5px;
-  text-decoration: none;
+  padding: 15px 25px 15px 25px;
+  align-self: center;
   margin: 40px 0 20px 0;
+  text-decoration: none;
   transition: color 0.5s, background-color 0.5s, border-color 0.5s; }
   .boton:hover {
     color: #D3D3D3;
     font-weight: bolder;
-    background-color: #165c85; }
+    background-color: #165c85;
+    cursor: pointer; }
 
 .barraNavegacion {
   background-color: #165c85; }
@@ -185,6 +186,7 @@ h5 {
       font-family: "Mulish", sans-serif;
       color: #333333;
       text-align: center;
+      font-weight: bold;
       margin: 0 0 20px 0; }
   .indexMed {
     background-color: #D8D8D8;
@@ -205,10 +207,11 @@ h5 {
           display: flex;
           flex-direction: column; }
           .indexMed__columnBoxTexto p {
-            font-size: 20px;
+            font-size: 15px;
             font-family: "Mulish", sans-serif;
             color: #333333;
             text-align: none;
+            font-weight: bold;
             margin: 10px 0 10px 0; }
   .indexInferior {
     height: fit-content;
@@ -224,10 +227,11 @@ h5 {
     .indexInferior__caja {
       width: 60%; }
       .indexInferior__caja p {
-        font-size: 20px;
+        font-size: 15px;
         font-family: "Mulish", sans-serif;
         color: #333333;
         text-align: none;
+        font-weight: bold;
         align-items: center;
         margin: 40px 0 0 20px; }
     .indexInferior__imagen {
@@ -335,25 +339,28 @@ h5 {
       font-family: "Mulish", sans-serif;
       color: #333333;
       text-align: center;
-      padding: 0 0 30px 0; }
+      font-weight: bold; }
     .QSSuperior__textoParrafo {
-      font-size: 20px;
+      font-size: 15px;
       font-family: "Mulish", sans-serif;
       color: #333333;
       text-align: none;
+      font-weight: bold;
       padding: 0 0 0 50px;
       text-indent: 1.5em; }
     .QSSuperior__textoSubtitulo {
-      font-size: 20px;
+      font-size: 15px;
       font-family: "Mulish", sans-serif;
       color: #333333;
       text-align: center;
+      font-weight: bold;
       padding: 30px 0 0 0; }
     .QSSuperior__textoFirma {
-      font-size: 20px;
+      font-size: 15px;
       font-family: "Mulish", sans-serif;
       color: #333333;
       text-align: end;
+      font-weight: bold;
       padding: 50px 100px 0 0; }
   .QSSuperior992 {
     display: none; }
@@ -369,10 +376,11 @@ h5 {
     width: 30%;
     padding: 50px 0 50px 0; }
     .QSMedio__cajaParrafo {
-      font-size: 20px;
+      font-size: 15px;
       font-family: "Mulish", sans-serif;
       color: #D3D3D3;
       text-align: none;
+      font-weight: bold;
       text-indent: 1.5em; }
     .QSMedio__cajaImagenes {
       gap: 15px;
@@ -432,15 +440,17 @@ h5 {
     display: flex;
     justify-content: center; }
   .festSup h3 {
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Mulish", sans-serif;
     color: #333333;
-    text-align: center; }
+    text-align: center;
+    font-weight: bold; }
   .festSup__card h2 {
     font-size: 25px;
     font-family: "Mulish", sans-serif;
     color: #333333;
     text-align: center;
+    font-weight: bold;
     padding-top: 50px; }
   .festSup__cardPrimer {
     flex-direction: row;
@@ -448,35 +458,40 @@ h5 {
     align-items: center;
     width: 95%;
     background-color: #E0E2E1;
-    padding: 20px 0 20px 0; }
+    padding: 20px 0 20px 0;
+    font-weight: bolder; }
   .festSup__cardSegundo {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     width: 95%;
     background-color: #D8D8D8;
-    padding: 20px 0 20px 0; }
+    padding: 20px 0 20px 0;
+    font-weight: bolder; }
   .festSup__cardTercer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 95%;
     background-color: #C9C9C9;
-    padding: 20px 0 20px 0; }
+    padding: 20px 0 20px 0;
+    font-weight: bolder; }
   .festSup__cardCuarto {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     width: 95%;
     background-color: #C1C1C1;
-    padding: 20px 0 20px 0; }
+    padding: 20px 0 20px 0;
+    font-weight: bolder; }
   .festSup__cardQuinto {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 95%;
     background-color: #B7B7B7;
-    padding: 20px 0 20px 0; }
+    padding: 20px 0 20px 0;
+    font-weight: bolder; }
   .festSup__card img {
     width: 30%;
     object-fit: cover; }
@@ -486,10 +501,11 @@ h5 {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px; }
     .festSup__cardText p {
-      font-size: 20px;
+      font-size: 15px;
       font-family: "Mulish", sans-serif;
       color: #333333;
       text-align: none;
+      font-weight: bold;
       font-weight: bold;
       transition: transform 0.5s; }
       .festSup__cardText p:hover {
@@ -563,6 +579,112 @@ h5 {
     width: 100vw;
     border-radius: 0px; } }
 
+.contactoSup h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: none;
+  margin-top: 100px; }
+
+.contactoSup h2 {
+  font-size: 25px;
+  font-family: "Mulish", sans-serif;
+  color: #333333;
+  text-align: center;
+  font-weight: bold; }
+
+.contactoMed__box {
+  padding: 25px; }
+  .contactoMed__boxIzq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none; }
+    .contactoMed__boxIzq h3 {
+      font-size: 25px;
+      font-family: "Mulish", sans-serif;
+      color: #333333;
+      text-align: none;
+      font-weight: bold;
+      font-size: 20px;
+      border: solid 1px;
+      border-color: #333333;
+      border-radius: 5px;
+      padding: 15px 25px 15px 25px;
+      align-self: flex-start;
+      margin: 25px 0 25px 0; }
+    .contactoMed__boxIzq p {
+      padding-top: 10px;
+      font-size: 15px;
+      font-family: "Mulish", sans-serif;
+      color: #333333;
+      text-align: none;
+      font-weight: bold; }
+  .contactoMed__box h2 {
+    font-size: 25px;
+    font-family: "Mulish", sans-serif;
+    color: #333333;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 30px 0 30px 0; }
+  .contactoMed__boxDer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 0 25px 25px;
+    background-color: #bdbdbd;
+    margin: 50px 50px 0 0;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px; }
+    .contactoMed__boxDer p {
+      font-size: 25px;
+      font-family: "Mulish", sans-serif;
+      color: #333333;
+      text-align: start;
+      font-weight: bold;
+      margin: 30px 0 30px 0; }
+
+.contactoInf__imagen {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 50px 0 50px 0; }
+  .contactoInf__imagen img {
+    width: 45%;
+    border-radius: 20px 0 20px 0; }
+
+.contactoInf__texto {
+  padding: 25px 0 75px 0; }
+
+.form-control {
+  background-color: #F4F4F4;
+  width: 90%; }
+
+.form-label {
+  font-size: 15px;
+  font-family: "Mulish", sans-serif;
+  color: #333333;
+  text-align: start;
+  font-weight: bold; }
+
+@media only screen and (max-width: 992px) {
+  .contactoMed__boxIzq {
+    align-items: center; }
+    .contactoMed__boxIzq h3 {
+      align-self: center; }
+  .contactoMed__box h2 {
+    padding-top: 50px; } }
+
+@media only screen and (max-width: 576px) {
+  .contactoMed__box h3 {
+    font-size: 20px; }
+  .contactoInf__imagen img {
+    width: 100%; }
+  .contactoInf__imagen img:nth-child(2) {
+    display: none; } }
+
 .footer {
   background-color: #333333;
   display: flex;
@@ -581,10 +703,11 @@ h5 {
       justify-content: center;
       align-items: none; }
       .footer__logoTexto p {
-        font-size: 20px;
+        font-size: 15px;
         font-family: "Mulish", sans-serif;
         color: #D3D3D3;
         text-align: none;
+        font-weight: bold;
         margin-left: 10px; }
   .footer__hv {
     display: flex;

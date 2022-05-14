@@ -1,0 +1,120 @@
+.contacto {
+    @extend %main;
+
+    &Sup h1 {
+        @include flexcolumn (none);
+        @extend %titulo;
+        margin-top: 100px;
+    }
+
+    &Sup h2 {
+        @include subtitulo ($color-letra-FC, center)
+    }
+
+    &Med__box {
+        padding: 25px;
+
+        &Izq {
+            @include flexcolumn (none);
+
+            & h3 {
+                @include subtitulo ($color-letra-FC, none);
+                font-size: 20px;
+                @include border (flex-start, 25px 0 25px 0);
+            }
+
+            & p {
+                padding-top: 10px;
+                @include parrafo ($color-letra-FC, none);
+            }
+        }
+
+        & h2{
+            @include subtitulo ($color-letra-FC, center);
+            font-size: 20px;
+            margin: 30px 0 30px 0;
+        }
+
+        &Der {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            padding: 0 0 25px 25px;
+            background-color: #bdbdbd;
+            margin: 50px 50px 0 0;
+            width: 100%;
+            height: fit-content;   
+            border-radius: 10px;
+
+            & p {
+                @include subtitulo ($color-letra-FC, start);
+                margin: 30px 0 30px 0;
+            }
+        }
+    }
+
+    &Inf__imagen {
+        @include flexrow (center);
+        gap: 25px;
+        margin: 50px 0 50px 0;
+
+        & img {
+            width: 45%;
+            border-radius: 20px 0 20px 0;
+        }
+    }
+
+    &Inf__texto {
+        padding: 25px 0 75px 0;
+        @extend %titulo;
+    }
+}
+
+.form-control {
+    background-color: #F4F4F4;
+    width: 90%;
+}
+
+.form-label {
+    @include parrafo ($color-letra-FC, start)
+}
+
+@media only screen and (max-width: 992px)  {
+    
+    .contactoMed__box {
+
+        &Izq {
+            align-items: center;
+    
+            & h3 {
+                align-self: center;
+            }
+        }
+
+        & h2 {
+            padding-top: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .contactoMed__box {
+
+        & h3 {
+            font-size: 20px;
+        }
+    }
+    
+    .contactoInf__imagen {
+
+        & img {
+            width: 100%;
+        }
+
+        & img:nth-child(2) {
+            display: none;
+        }
+    
+    }
+}
