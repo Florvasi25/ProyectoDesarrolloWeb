@@ -81,10 +81,33 @@
 
 @media only screen and (max-width: 576px) {
     
-    .festSup__card {
+    %festivalSmall {
         display: flex;
         flex-direction: column-reverse;
         gap: 15px;
+    };
+
+    .festSup__card {
+
+        &Primer {
+            @extend %festivalSmall;
+        }
+
+        &Segundo {
+            @extend %festivalSmall;
+        }
+
+        &Tercero {
+            @extend %festivalSmall;
+        }
+        
+        &Cuarto {
+            @extend %festivalSmall;
+        }
+
+        &Quinto {
+            @extend %festivalSmall;
+        }
 
         & img {
             width: 100%;
