@@ -17,10 +17,20 @@
         &Izq {
             @include flexcolumn (none);
 
+            @include mQ (tablet) {
+                align-items: center;
+            }
+
             & h3 {
                 @include subtitulo ($color-letra-FC, none);
                 font-size: 20px;
                 @include border (flex-start, 25px 0 25px 0);
+                @include mQ (tablet) {
+                    align-self: center;
+                }
+                @include mQ (mobile) {
+                    font-size: 20px;
+                }
             }
 
             & p {
@@ -33,6 +43,9 @@
             @include subtitulo ($color-letra-FC, center);
             font-size: 20px;
             margin: 30px 0 30px 0;
+            @include mQ (tablet) {
+                padding-top: 50px;
+            }
         }
 
         &Der {
@@ -61,7 +74,19 @@
         & img {
             width: 45%;
             border-radius: 20px 0 20px 0;
+            @include mQ (mobile) {
+                width: 100%;
+                & img:nth-child(2) {
+                    display: none;
+                }        
+            }
         }
+
+        & img:nth-child(2) {
+            @include mQ (mobile) {
+                    display: none;
+            }        
+        }        
     }
 
     &Inf__texto {
@@ -77,44 +102,4 @@
 
 .form-label {
     @include parrafo ($color-letra-FC, start)
-}
-
-@media only screen and (max-width: 992px)  {
-    
-    .contactoMed__box {
-
-        &Izq {
-            align-items: center;
-    
-            & h3 {
-                align-self: center;
-            }
-        }
-
-        & h2 {
-            padding-top: 50px;
-        }
-    }
-}
-
-@media only screen and (max-width: 576px) {
-
-    .contactoMed__box {
-
-        & h3 {
-            font-size: 20px;
-        }
-    }
-    
-    .contactoInf__imagen {
-
-        & img {
-            width: 100%;
-        }
-
-        & img:nth-child(2) {
-            display: none;
-        }
-    
-    }
 }

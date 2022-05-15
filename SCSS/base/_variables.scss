@@ -24,7 +24,7 @@ $tamanio-tipografia:(
     color: $color;
     text-align: $align;
     font-weight: bold
-};
+}
 
 @mixin parrafo ($color, $align) {
     font-size: map-get($tamanio-tipografia, parrafo);
@@ -32,19 +32,19 @@ $tamanio-tipografia:(
     color: $color;
     text-align: $align;
     font-weight: bold;
-};
+}
 
 @mixin flexcolumn ($align) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: $align;
-};
+}
 
 @mixin flexrow ($justify) {
     display: flex;
     justify-content: $justify;
-};
+}
 
 @mixin container ($direction, $color) {
     flex-direction: $direction;
@@ -54,7 +54,7 @@ $tamanio-tipografia:(
     background-color: $color;
     padding: 20px 0 20px 0;
     font-weight: bolder;
-};
+}
 
 @mixin border ($alignself, $margin) {
     border: solid 1px;
@@ -64,17 +64,38 @@ $tamanio-tipografia:(
     align-self: $alignself;
     margin: $margin;
 }
+
+@mixin mQ ($pantalla) {
+    @if $pantalla == 'mobile' {
+        @media only screen and (max-width: 576px) {
+            @content;
+        }
+    };
+
+    @if $pantalla == 'tablet' {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+    
+    @if $pantalla == 'desktop' {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+}
+
 %titulo {
     font-family: $fuente-principal;
     color: $color-letra-FC;
     font-size: map-get($tamanio-tipografia, titulo);
     text-align: center;
-};
+}
 
 %main {
     background-color: $color-principal;
     display: flex;
     flex-direction: column;
     align-items: center;
-};
+}
 
