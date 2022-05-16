@@ -1,15 +1,12 @@
 .galeria {
     @extend %main;
-    width: 100%;
     
     &Sup h1 {
         @include flexcolumn (center);
         @extend %titulo;
-        padding: 100px 0 0 0;
     }
 
     &Med {
-        margin-bottom: 100px;
 
         &__izq {
             align-items: end;

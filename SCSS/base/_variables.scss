@@ -8,27 +8,40 @@ $shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493);
 
 /* TIPOGRAFIAS */
 
-$fuente-principal: 'Mulish', sans-serif;
+$fuente-secundaria: 'Commissioner', sans-serif;
+$fuente-principal: 'Fraunces', serif;
 
-$tamanio-tipografia:(
-    titulo: 35px,
-    subtitulo: 25px,
-    parrafo: 15px,
+$tamanio-tipolarge:(
+    titulo: 2rem,
+    subtitulo: 1.5rem,
+    parrafo: 1rem,
+);
+
+$tamanio-tiposmall:(
+    titulo: 1.5rem,
+    subtitulo: 1rem,
+    parrafo: 0.7rem,
 );
 
 /* VARIABLES */
 
 @mixin subtitulo ($color, $align) {
-    font-size: map-get($tamanio-tipografia, subtitulo);
-    font-family: $fuente-principal;
+    font-size: map-get($tamanio-tipolarge, subtitulo);
+    @include mQ (mobile) {
+        font-size: map-get($tamanio-tiposmall, subtitulo);
+    }
+    font-family: $fuente-secundaria;
     color: $color;
     text-align: $align;
     font-weight: bold
 }
 
 @mixin parrafo ($color, $align) {
-    font-size: map-get($tamanio-tipografia, parrafo);
-    font-family: $fuente-principal;
+    font-size: map-get($tamanio-tipolarge, parrafo);
+    @include mQ (mobile) {
+        font-size: map-get($tamanio-tiposmall, parrafo);
+    }
+    font-family: $fuente-secundaria;
     color: $color;
     text-align: $align;
     font-weight: bold;
@@ -88,8 +101,11 @@ $tamanio-tipografia:(
 %titulo {
     font-family: $fuente-principal;
     color: $color-letra-FC;
-    font-size: map-get($tamanio-tipografia, titulo);
+    font-size: map-get($tamanio-tipolarge, titulo);
     text-align: center;
+    @include mQ (mobile) {
+        font-size: 1.2rem;
+    }
 }
 
 %main {
@@ -97,5 +113,6 @@ $tamanio-tipografia:(
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 150px 0;
 }
-

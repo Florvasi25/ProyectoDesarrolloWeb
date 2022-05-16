@@ -2,16 +2,21 @@
 /* TIPOGRAFIAS */
 /* VARIABLES */
 .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
-  font-family: "Mulish", sans-serif;
+  font-family: "Fraunces", serif;
   color: #333333;
-  font-size: 35px;
+  font-size: 2rem;
   text-align: center; }
+  @media only screen and (max-width: 576px) {
+    .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
+      font-size: 1.2rem; } }
 
 .index, .QS, .fest, .galeria, .contacto {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  width: 100%;
+  padding: 150px 0; }
 
 * {
   margin: 0;
@@ -19,8 +24,11 @@
 
 /* GOOGLE FONTS
 
+font-family: 'DM Serif Display', serif;
 font-family: 'Mulish', sans-serif;
 font-family: 'Quicksand', sans-serif;
+font-family: 'Commissioner', sans-serif;
+font-family: 'Fraunces', serif;
 
 */
 p {
@@ -32,8 +40,8 @@ h5 {
   text-align: center; }
 
 .boton {
-  font-size: 15px;
-  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  font-family: "Commissioner", sans-serif;
   color: #333333;
   text-align: none;
   font-weight: bold;
@@ -45,6 +53,9 @@ h5 {
   margin: 40px 0 20px 0;
   text-decoration: none;
   transition: color 0.5s, background-color 0.5s, border-color 0.5s; }
+  @media only screen and (max-width: 576px) {
+    .boton {
+      font-size: 0.7rem; } }
   .boton:hover {
     color: #D3D3D3;
     font-weight: bolder;
@@ -52,18 +63,25 @@ h5 {
     cursor: pointer; }
 
 .barraNavegacion {
-  background-color: #165c85; }
-  .barraNavegacion__imagen {
-    width: 20px;
-    padding: 30px 0 30px 0; }
+  background-color: #165c85;
+  width: 100%;
+  position: fixed; }
+  @media only screen and (max-width: 992px) {
+    .barraNavegacion {
+      padding: 10px 0; } }
   .barraNavegacion__texto {
-    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+    font-family: "Commissioner", sans-serif;
     color: #D3D3D3;
-    margin-left: 10px;
-    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-weight: lighter;
     text-decoration: none;
     position: relative;
     padding-bottom: 10px; }
+    @media only screen and (max-width: 576px) {
+      .barraNavegacion__texto {
+        font-size: 0.7rem; } }
     .barraNavegacion__texto::after {
       content: "";
       position: absolute;
@@ -83,12 +101,21 @@ h5 {
       color: #D3D3D3;
       font-weight: bolder; }
   .barraNavegacion__anchor {
-    font-size: 20px;
-    text-decoration: none;
-    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+    font-family: "Commissioner", sans-serif;
+    color: #D3D3D3;
     text-align: end;
+    font-weight: bold;
+    font-weight: lighter;
+    text-decoration: none;
     transition: background-color 0.5s;
     position: relative; }
+    @media only screen and (max-width: 576px) {
+      .barraNavegacion__anchor {
+        font-size: 0.7rem; } }
+    @media only screen and (max-width: 576px) {
+      .barraNavegacion__anchor {
+        font-size: 0.7rem; } }
     .barraNavegacion__anchor::after {
       content: "";
       position: absolute;
@@ -101,6 +128,9 @@ h5 {
       transform-origin: right;
       transform: scale(0);
       transition: transform 0.3s ease-in-out; }
+      @media only screen and (max-width: 992px) {
+        .barraNavegacion__anchor::after {
+          display: none; } }
     .barraNavegacion__anchor:hover::after {
       transform-origin: left;
       transform: scale(1); }
@@ -114,56 +144,46 @@ h5 {
 
 .nav__mdsm {
   display: none; }
+  @media only screen and (max-width: 992px) {
+    .nav__mdsm {
+      display: flex;
+      align-items: center; } }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #D3D3D3; }
+  color: #D3D3D3;
+  margin: 0 20px;
+  padding: 10px 0; }
+  @media only screen and (max-width: 992px) {
+    .navbar-light .navbar-nav .nav-link {
+      padding-top: 15px; } }
+  @media only screen and (max-width: 576px) {
+    .navbar-light .navbar-nav .nav-link {
+      margin: 0; } }
   .navbar-light .navbar-nav .nav-link:hover {
     color: #D3D3D3; }
 
+.navbar > .container {
+  margin: 0 150px 0 150px; }
+  @media only screen and (max-width: 992px) {
+    .navbar > .container {
+      margin: 0 100px; } }
+  @media only screen and (max-width: 576px) {
+    .navbar > .container {
+      margin: 0 30px; } }
+
 /* MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM */
 @media only screen and (max-width: 992px) {
-  .barraNavegacion {
-    background-color: #165c85;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: fit-content;
-    padding: 20px 0 20px 0; }
-    .barraNavegacion__imagen {
-      width: 30px; }
-    .barraNavegacion__anchor::after {
-      display: none; }
-    .barraNavegacion__texto::after {
-      display: none; }
   #navbarNav .navbar-collapse .collpase {
     display: flex;
     justify-content: end; }
   .nav__lg {
     display: none; }
-  .nav__mdsm {
-    display: flex;
-    align-items: center; }
   .navbar-toggler:focus {
     color: #D3D3D3; }
   .navbar-light .navbar-toggler {
     border-color: #D3D3D3; }
     .navbar-light .navbar-toggler-icon {
       background-image: url(../Imagenes/menuHamburguesa.png); } }
-
-/* SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-@media only screen and (max-width: 576px) {
-  .barraNavegacion {
-    background-color: #165c85;
-    width: 100%; }
-    .barraNavegacion__texto {
-      font-size: 15px; }
-    .barraNavegacion__lista {
-      padding: 0; }
-    .barraNavegacion__anchor {
-      font-size: 15px;
-      padding: 10px 10px 30px 10px; }
-  .container {
-    margin: 0 50px 0 50px; } }
 
 /* CUERPO SUPERIOR */
 .index {
@@ -175,19 +195,43 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .indexSuperior h1 {
-      color: #333333;
-      font-size: 40px;
-      font-weight: bold;
-      font-family: "Mulish", sans-serif;
-      margin: 100px 0 10px 0; }
-    .indexSuperior h3 {
-      font-size: 25px;
-      font-family: "Mulish", sans-serif;
+    .indexSuperior__banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .indexSuperior__banner img {
+        width: 7.5%; }
+        @media only screen and (max-width: 576px) {
+          .indexSuperior__banner img {
+            margin-left: 20px; } }
+      .indexSuperior__banner h1 {
+        color: #333333;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: "Fraunces", serif;
+        margin-left: 20px;
+        justify-content: center; }
+        @media only screen and (max-width: 992px) {
+          .indexSuperior__banner h1 {
+            font-size: 1.8rem; } }
+        @media only screen and (max-width: 576px) {
+          .indexSuperior__banner h1 {
+            font-size: 1rem;
+            margin: 0 20px 0 10px; } }
+    .indexSuperior__texto h3 {
+      font-size: 1.5rem;
+      font-family: "Commissioner", sans-serif;
       color: #333333;
       text-align: center;
       font-weight: bold;
       margin: 0 0 20px 0; }
+      @media only screen and (max-width: 576px) {
+        .indexSuperior__texto h3 {
+          font-size: 1rem; } }
+      @media only screen and (max-width: 576px) {
+        .indexSuperior__texto h3 {
+          font-size: 0.7rem; } }
   .indexMed {
     background-color: #D8D8D8;
     padding: 100px 0 100px 0;
@@ -207,12 +251,15 @@ h5 {
           display: flex;
           flex-direction: column; }
           .indexMed__columnBoxTexto p {
-            font-size: 15px;
-            font-family: "Mulish", sans-serif;
+            font-size: 1rem;
+            font-family: "Commissioner", sans-serif;
             color: #333333;
             text-align: none;
             font-weight: bold;
             margin: 10px 0 10px 0; }
+            @media only screen and (max-width: 576px) {
+              .indexMed__columnBoxTexto p {
+                font-size: 0.7rem; } }
   .indexInferior {
     height: fit-content;
     display: flex;
@@ -227,13 +274,15 @@ h5 {
     .indexInferior__caja {
       width: 60%; }
       .indexInferior__caja p {
-        font-size: 15px;
-        font-family: "Mulish", sans-serif;
+        font-size: 1rem;
+        font-family: "Commissioner", sans-serif;
         color: #333333;
-        text-align: none;
+        text-align: center;
         font-weight: bold;
-        align-items: center;
-        margin: 40px 0 0 20px; }
+        margin-top: 40px; }
+        @media only screen and (max-width: 576px) {
+          .indexInferior__caja p {
+            font-size: 0.7rem; } }
     .indexInferior__imagen {
       display: flex;
       justify-content: center; }
@@ -246,9 +295,6 @@ h5 {
 
 /* MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM */
 @media only screen and (max-width: 992px) {
-  /* MAIN INDEX */
-  .indexSuperior h1 {
-    font-size: 200%; }
   .indexMed__column {
     display: flex;
     flex-direction: column-reverse; }
@@ -273,13 +319,8 @@ h5 {
 @media only screen and (max-width: 576px) {
   #index__fotosCarrousel {
     width: 100%; }
-  .indexSuperior h1 {
-    margin: 50px 0 0 0;
-    font-size: 20px;
+  .indexSuperior__banner h1 {
     text-align: center; }
-  .indexSuperior h3 {
-    font-size: 15px;
-    padding: 10px 0 0 0; }
   .indexMed {
     padding: 50px 0 50px 0; }
     .indexMed__columnFotos {
@@ -304,15 +345,12 @@ h5 {
     .indexInferior__caja {
       width: 80%;
       padding: 0; }
-      .indexInferior__caja p {
-        text-align: center;
-        font-size: 20px; }
     .indexInferior__imagenFoto {
       width: 100%;
       padding: 0; } }
 
 .QSTitulo h1 {
-  margin: 100px 0 100px 0; }
+  margin-bottom: 100px; }
 
 .QSSuperior {
   display: flex;
@@ -335,33 +373,45 @@ h5 {
     justify-content: center;
     align-items: none; }
     .QSSuperior__textoSecundario {
-      font-size: 25px;
-      font-family: "Mulish", sans-serif;
+      font-size: 1.5rem;
+      font-family: "Commissioner", sans-serif;
       color: #333333;
       text-align: center;
       font-weight: bold; }
+      @media only screen and (max-width: 576px) {
+        .QSSuperior__textoSecundario {
+          font-size: 1rem; } }
     .QSSuperior__textoParrafo {
-      font-size: 15px;
-      font-family: "Mulish", sans-serif;
+      font-size: 1rem;
+      font-family: "Commissioner", sans-serif;
       color: #333333;
       text-align: none;
       font-weight: bold;
       padding: 0 0 0 50px;
       text-indent: 1.5em; }
+      @media only screen and (max-width: 576px) {
+        .QSSuperior__textoParrafo {
+          font-size: 0.7rem; } }
     .QSSuperior__textoSubtitulo {
-      font-size: 15px;
-      font-family: "Mulish", sans-serif;
+      font-size: 1rem;
+      font-family: "Commissioner", sans-serif;
       color: #333333;
       text-align: center;
       font-weight: bold;
       padding: 30px 0 0 0; }
+      @media only screen and (max-width: 576px) {
+        .QSSuperior__textoSubtitulo {
+          font-size: 0.7rem; } }
     .QSSuperior__textoFirma {
-      font-size: 15px;
-      font-family: "Mulish", sans-serif;
+      font-size: 1rem;
+      font-family: "Commissioner", sans-serif;
       color: #333333;
       text-align: end;
       font-weight: bold;
       padding: 50px 100px 0 0; }
+      @media only screen and (max-width: 576px) {
+        .QSSuperior__textoFirma {
+          font-size: 0.7rem; } }
   .QSSuperior992 {
     display: none; }
 
@@ -370,18 +420,21 @@ h5 {
   background-color: #6D6D6D;
   display: flex;
   justify-content: space-evenly;
-  margin: 100px 0 100px 0;
+  margin-top: 100px;
   align-items: center; }
   .QSMedio__caja {
     width: 30%;
     padding: 50px 0 50px 0; }
     .QSMedio__cajaParrafo {
-      font-size: 15px;
-      font-family: "Mulish", sans-serif;
+      font-size: 1rem;
+      font-family: "Commissioner", sans-serif;
       color: #D3D3D3;
       text-align: none;
       font-weight: bold;
       text-indent: 1.5em; }
+      @media only screen and (max-width: 576px) {
+        .QSMedio__cajaParrafo {
+          font-size: 0.7rem; } }
     .QSMedio__cajaImagenes {
       gap: 15px;
       padding: 100px 0 100px 0; }
@@ -434,82 +487,98 @@ h5 {
       width: 45vw;
       height: auto; } }
 
-.fest {
-  padding: 100px 0 100px 0; }
-  .festSup h1 {
-    display: flex;
-    justify-content: center; }
-  .festSup h3 {
-    font-size: 15px;
-    font-family: "Mulish", sans-serif;
+.festSup h1 {
+  display: flex;
+  justify-content: center; }
+
+.festSup h3 {
+  font-size: 1rem;
+  font-family: "Commissioner", sans-serif;
+  color: #333333;
+  text-align: center;
+  font-weight: bold; }
+  @media only screen and (max-width: 576px) {
+    .festSup h3 {
+      font-size: 0.7rem; } }
+
+.festSup__card h2 {
+  font-size: 1.5rem;
+  font-family: "Commissioner", sans-serif;
+  color: #333333;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 50px; }
+  @media only screen and (max-width: 576px) {
+    .festSup__card h2 {
+      font-size: 1rem; } }
+
+.festSup__cardPrimer {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-color: #E0E2E1;
+  padding: 20px 0 20px 0;
+  font-weight: bolder; }
+
+.festSup__cardSegundo {
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-color: #D8D8D8;
+  padding: 20px 0 20px 0;
+  font-weight: bolder; }
+
+.festSup__cardTercer {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-color: #C9C9C9;
+  padding: 20px 0 20px 0;
+  font-weight: bolder; }
+
+.festSup__cardCuarto {
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-color: #C1C1C1;
+  padding: 20px 0 20px 0;
+  font-weight: bolder; }
+
+.festSup__cardQuinto {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-color: #B7B7B7;
+  padding: 20px 0 20px 0;
+  font-weight: bolder; }
+
+.festSup__card img {
+  width: 30%;
+  object-fit: cover; }
+
+.festSup__cardText {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px; }
+  .festSup__cardText p {
+    font-size: 1rem;
+    font-family: "Commissioner", sans-serif;
     color: #333333;
-    text-align: center;
-    font-weight: bold; }
-  .festSup__card h2 {
-    font-size: 25px;
-    font-family: "Mulish", sans-serif;
-    color: #333333;
-    text-align: center;
+    text-align: none;
     font-weight: bold;
-    padding-top: 50px; }
-  .festSup__cardPrimer {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    background-color: #E0E2E1;
-    padding: 20px 0 20px 0;
-    font-weight: bolder; }
-  .festSup__cardSegundo {
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    background-color: #D8D8D8;
-    padding: 20px 0 20px 0;
-    font-weight: bolder; }
-  .festSup__cardTercer {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    background-color: #C9C9C9;
-    padding: 20px 0 20px 0;
-    font-weight: bolder; }
-  .festSup__cardCuarto {
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    background-color: #C1C1C1;
-    padding: 20px 0 20px 0;
-    font-weight: bolder; }
-  .festSup__cardQuinto {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    background-color: #B7B7B7;
-    padding: 20px 0 20px 0;
-    font-weight: bolder; }
-  .festSup__card img {
-    width: 30%;
-    object-fit: cover; }
-  .festSup__cardText {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 5px; }
-    .festSup__cardText p {
-      font-size: 15px;
-      font-family: "Mulish", sans-serif;
-      color: #333333;
-      text-align: none;
-      font-weight: bold;
-      font-weight: bold;
-      transition: transform 0.5s; }
-      .festSup__cardText p:hover {
-        transform: scale(1.1); }
+    font-weight: bold;
+    transition: transform 0.5s; }
+    @media only screen and (max-width: 576px) {
+      .festSup__cardText p {
+        font-size: 0.7rem; } }
+    .festSup__cardText p:hover {
+      transform: scale(1.1); }
 
 @media only screen and (max-width: 992px) {
   .festSup__card {
@@ -529,32 +598,31 @@ h5 {
   .festSup__cardText {
     margin: 30px 0 30px 0; } }
 
-.galeria {
-  width: 100%; }
-  .galeriaSup h1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0 0 0; }
-  .galeriaMed {
-    margin-bottom: 100px; }
-    .galeriaMed__izq {
-      align-items: end; }
-    .galeriaMed__der {
-      margin-top: 75px; }
-    .galeriaMed__fila img {
-      width: 40vw;
-      object-fit: cover;
-      padding: 10px;
-      border-radius: 20px 0 20px 0;
-      margin: 10px 0 10px 0; }
-    .galeriaMed__filaD img {
-      width: 20vw;
-      object-fit: cover;
-      padding: 10px;
-      border-radius: 20px 0 20px 0;
-      margin: 10px 0 10px 0; }
+.galeriaSup h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.galeriaMed__izq {
+  align-items: end; }
+
+.galeriaMed__der {
+  margin-top: 75px; }
+
+.galeriaMed__fila img {
+  width: 40vw;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 20px 0 20px 0;
+  margin: 10px 0 10px 0; }
+
+.galeriaMed__filaD img {
+  width: 20vw;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 20px 0 20px 0;
+  margin: 10px 0 10px 0; }
 
 @media only screen and (max-width: 992px) {
   .galeriaMed {
@@ -583,15 +651,17 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: none;
-  margin-top: 100px; }
+  align-items: none; }
 
 .contactoSup h2 {
-  font-size: 25px;
-  font-family: "Mulish", sans-serif;
+  font-size: 1.5rem;
+  font-family: "Commissioner", sans-serif;
   color: #333333;
   text-align: center;
   font-weight: bold; }
+  @media only screen and (max-width: 576px) {
+    .contactoSup h2 {
+      font-size: 1rem; } }
 
 .contactoMed__box {
   padding: 25px; }
@@ -604,8 +674,8 @@ h5 {
       .contactoMed__boxIzq {
         align-items: center; } }
     .contactoMed__boxIzq h3 {
-      font-size: 25px;
-      font-family: "Mulish", sans-serif;
+      font-size: 1.5rem;
+      font-family: "Commissioner", sans-serif;
       color: #333333;
       text-align: none;
       font-weight: bold;
@@ -616,6 +686,9 @@ h5 {
       padding: 15px 25px 15px 25px;
       align-self: flex-start;
       margin: 25px 0 25px 0; }
+      @media only screen and (max-width: 576px) {
+        .contactoMed__boxIzq h3 {
+          font-size: 1rem; } }
       @media only screen and (max-width: 992px) {
         .contactoMed__boxIzq h3 {
           align-self: center; } }
@@ -624,19 +697,25 @@ h5 {
           font-size: 20px; } }
     .contactoMed__boxIzq p {
       padding-top: 10px;
-      font-size: 15px;
-      font-family: "Mulish", sans-serif;
+      font-size: 1rem;
+      font-family: "Commissioner", sans-serif;
       color: #333333;
       text-align: none;
       font-weight: bold; }
+      @media only screen and (max-width: 576px) {
+        .contactoMed__boxIzq p {
+          font-size: 0.7rem; } }
   .contactoMed__box h2 {
-    font-size: 25px;
-    font-family: "Mulish", sans-serif;
+    font-size: 1.5rem;
+    font-family: "Commissioner", sans-serif;
     color: #333333;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
     margin: 30px 0 30px 0; }
+    @media only screen and (max-width: 576px) {
+      .contactoMed__box h2 {
+        font-size: 1rem; } }
     @media only screen and (max-width: 992px) {
       .contactoMed__box h2 {
         padding-top: 50px; } }
@@ -651,12 +730,15 @@ h5 {
     height: fit-content;
     border-radius: 10px; }
     .contactoMed__boxDer p {
-      font-size: 25px;
-      font-family: "Mulish", sans-serif;
+      font-size: 1.5rem;
+      font-family: "Commissioner", sans-serif;
       color: #333333;
       text-align: start;
       font-weight: bold;
       margin: 30px 0 30px 0; }
+      @media only screen and (max-width: 576px) {
+        .contactoMed__boxDer p {
+          font-size: 1rem; } }
 
 .contactoInf__imagen {
   display: flex;
@@ -676,29 +758,36 @@ h5 {
       display: none; } }
 
 .contactoInf__texto {
-  padding: 25px 0 75px 0; }
+  padding-top: 25px; }
 
 .form-control {
   background-color: #F4F4F4;
   width: 90%; }
 
 .form-label {
-  font-size: 15px;
-  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  font-family: "Commissioner", sans-serif;
   color: #333333;
   text-align: start;
   font-weight: bold; }
+  @media only screen and (max-width: 576px) {
+    .form-label {
+      font-size: 0.7rem; } }
 
 .footer {
-  background-color: #333333;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: #333333;
+  flex-wrap: wrap;
   align-items: center; }
   .footer__logo {
     display: flex;
     margin: 0 0 0 50px;
     padding: 75px 0 75px 0; }
+    @media only screen and (max-width: 576px) {
+      .footer__logo {
+        align-self: center;
+        margin: 0; } }
     .footer__logoImagen {
       width: 30px; }
     .footer__logoTexto {
@@ -707,66 +796,56 @@ h5 {
       justify-content: center;
       align-items: none; }
       .footer__logoTexto p {
-        font-size: 15px;
-        font-family: "Mulish", sans-serif;
+        font-size: 1rem;
+        font-family: "Commissioner", sans-serif;
         color: #D3D3D3;
         text-align: none;
         font-weight: bold;
         margin-left: 10px; }
+        @media only screen and (max-width: 576px) {
+          .footer__logoTexto p {
+            font-size: 0.7rem; } }
   .footer__hv {
     display: flex;
     margin: 0 50px 0 0; }
+    @media only screen and (max-width: 992px) {
+      .footer__hv {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 30px 30px 0; } }
+    @media only screen and (max-width: 576px) {
+      .footer__hv {
+        padding: 0 0 0 0;
+        margin: 0 0 50px 0; } }
     .footer__hvLista {
       list-style: none;
       display: flex;
+      align-items: center;
       padding: 0 0 0 20px; }
-      .footer__hvListaLogo {
-        height: 40px;
+      @media only screen and (max-width: 992px) {
+        .footer__hvLista {
+          padding: 30px 0 0 10px; } }
+      @media only screen and (max-width: 576px) {
+        .footer__hvLista {
+          padding: 30px 0 0 0; } }
+      .footer__hvLista img {
+        height: 30px;
         margin: 0 15px 0 15px;
         transition: transform 0.5s; }
-        .footer__hvListaLogo:hover {
+        .footer__hvLista img:hover {
           transform: scale(1.2); }
-      .footer__hvListaLogoG {
-        height: 40px;
-        margin: 0 15px 0 15px; }
-      .footer__hvListaEmail {
+      .footer__hvLista p {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: none;
-        font-family: 'Mulish', sans-serif;
+        font-size: 1rem;
+        font-family: "Commissioner", sans-serif;
         color: #D3D3D3;
-        font-size: 15px; }
-      .footer__hvListaDireccion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: none;
-        font-family: 'Mulish', sans-serif;
-        color: #D3D3D3;
-        font-size: 15px; }
-
-/* MEDIUM MEDIUM MEDIUM */
-@media only screen and (max-width: 992px) {
-  .footer__hv {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 30px 30px 0; }
-    .footer__hvLista {
-      padding: 30px 0 0 10px; }
-      .footer__hvListaEmail {
-        font-size: 13px; }
-      .footer__hvListaDireccion {
-        font-size: 13px; } }
-
-/* SMALL SMALL SMALL */
-@media only screen and (max-width: 576px) {
-  .footer__hv {
-    padding: 0 0 0 0;
-    margin: 0 0 50px 0; }
-    .footer__hvLista {
-      padding: 30px 0 0 0; }
-  .footer__logo {
-    align-self: center;
-    margin: 0; } }
+        text-align: none;
+        font-weight: bold;
+        font-weight: lighter; }
+        @media only screen and (max-width: 576px) {
+          .footer__hvLista p {
+            font-size: 0.7rem; } }

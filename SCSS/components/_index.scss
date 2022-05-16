@@ -6,18 +6,44 @@
     &Superior {
         width: 100%;
         @include flexcolumn (center);
-    
-        & h1{
-            color: $color-letra-FC;
-            font-size: 40px;
-            font-weight: bold;
-            font-family: $fuente-principal;
-            margin: 100px 0 10px 0;
+
+        &__banner {
+            @include flexrow (center);
+            align-items: center;
+            width: 100%;
+
+            & img {
+                width: 7.5%;
+                @include mQ (mobile) {
+                    margin-left: 20px;
+                }
+            }
+
+            & h1{
+                color: $color-letra-FC;
+                font-size: 2rem;
+                font-weight: bold;
+                font-family: $fuente-principal;
+                margin-left: 20px;
+                justify-content: center;
+                @include mQ (tablet) {
+                    font-size: 1.8rem;
+                }
+                @include mQ (mobile) {
+                    font-size: 1rem;
+                    margin: 0 20px 0 10px;
+                }
+            }
+
+            
         }
-    
-        & h3 {
+        
+        &__texto h3 {
             @include subtitulo ($color-letra-FC, center);
             margin: 0 0 20px 0;
+            @include mQ (mobile) {
+                font-size: 0.7rem;
+            }
         }
     }
     
@@ -79,9 +105,8 @@
             width: 60%;
     
             & p {
-                @include parrafo ($color-letra-FC, none);
-                align-items: center;
-                margin: 40px 0 0 20px;
+                @include parrafo ($color-letra-FC, center);
+                margin-top: 40px;
             }
         }
     
@@ -104,12 +129,6 @@
 /* MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM */
 
 @media only screen and (max-width: 992px) {
-
-    /* MAIN INDEX */
-
-    .indexSuperior h1{
-        font-size: 200%;
-    }
 
     .indexMed__column {
         display: flex;
@@ -153,18 +172,8 @@
         width: 100%;
     }
 
-    .indexSuperior {
-         
-        & h1 {
-            margin: 50px 0 0 0;
-            font-size: 20px;
+    .indexSuperior__banner h1{ 
             text-align: center;    
-        }
-
-        & h3 {
-            font-size: 15px;
-            padding: 10px 0 0 0;    
-        }
     }
     
     .indexMed {
@@ -204,11 +213,6 @@
         &__caja {
             width: 80%;
             padding: 0;
-    
-            & p {
-                text-align: center;
-                font-size: 20px;
-            }
         }
     
         &__imagenFoto {

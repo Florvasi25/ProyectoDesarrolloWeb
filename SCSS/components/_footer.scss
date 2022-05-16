@@ -1,14 +1,17 @@
 .footer {
+    @include flexrow (space-evenly);
     background-color: #333333;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
 
     &__logo {
         display: flex;
         margin: 0 0 0 50px;
         padding: 75px 0 75px 0;
+        @include mQ (mobile) {
+            align-self: center;
+            margin: 0;    
+        }
 
         &Imagen {
             width: 30px;
@@ -27,14 +30,30 @@
     &__hv {
         display: flex;
         margin: 0 50px 0 0;
+        @include mQ (tablet) {
+            @include flexrow (center);
+            flex-wrap: wrap;
+            margin: 0 30px 30px 0;    
+        }
+        @include mQ (mobile) {
+            padding: 0 0 0 0;
+            margin: 0 0 50px 0;    
+        }
 
         &Lista {
             list-style: none;
             display: flex;
+            align-items: center;
             padding: 0 0 0 20px;
+            @include mQ (tablet) {
+                padding: 30px 0 0 10px;
+            }
+            @include mQ (mobile) {
+                padding: 30px 0 0 0;    
+            }
 
-            &Logo {
-                height: 40px;
+            & img {
+                height: 30px;
                 margin: 0 15px 0 15px;
                 transition: transform 0.5s;
 
@@ -44,75 +63,11 @@
                     
             }
 
-            &LogoG {
-                height: 40px;
-                margin: 0 15px 0 15px;
-            }
-
-            &Email {
+            & p {
                 @include flexcolumn (none);
-                font-family: 'Mulish', sans-serif;
-                color: #D3D3D3;
-                font-size: 15px;
-            }
-
-            &Direccion {
-                @include flexcolumn (none);
-                font-family: 'Mulish', sans-serif;
-                color: #D3D3D3;
-                font-size: 15px;
+                @include parrafo ($color-letra-FO, none);
+                font-weight: lighter;
             }
         }
     } 
 }
-
-/* MEDIUM MEDIUM MEDIUM */
-
-@media only screen and (max-width: 992px) {
-
-    .footer__hv {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0 30px 30px 0;
-    
-        &Lista {
-            padding: 30px 0 0 10px;
-    
-            &Email{
-                font-size: 13px;
-            }
-    
-            &Direccion {
-                font-size: 13px;
-            }    
-        } 
-    }
-}
-
-
-
-/* SMALL SMALL SMALL */
-
-@media only screen and (max-width: 576px) {
-
-    .footer__hv {
-        padding: 0 0 0 0;
-        margin: 0 0 50px 0;
-    
-        &Lista {
-            padding: 30px 0 0 0;
-        }
-    }
-    
-    .footer__logo {
-        align-self: center;
-        margin: 0;
-    }
-}
-
-
-
-
-
-
