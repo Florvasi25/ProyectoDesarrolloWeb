@@ -1,13 +1,13 @@
 /* COLORES */
 /* TIPOGRAFIAS */
 /* VARIABLES */
-.indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
+.indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
   font-family: "Fraunces", serif;
   color: #333333;
   font-size: 2rem;
   text-align: center; }
   @media only screen and (max-width: 576px) {
-    .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
+    .indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
       font-size: 1.2rem; } }
 
 .index, .QS, .fest, .galeria, .contacto {
@@ -17,6 +17,9 @@
   align-items: center;
   width: 100%;
   padding: 150px 0; }
+  @media only screen and (max-width: 576px) {
+    .index, .QS, .fest, .galeria, .contacto {
+      padding: 125px 0; } }
 
 * {
   margin: 0;
@@ -64,8 +67,8 @@ h5 {
 
 .barraNavegacion {
   background-color: #165c85;
-  width: 100%;
-  position: fixed; }
+  position: fixed;
+  width: 100%; }
   @media only screen and (max-width: 992px) {
     .barraNavegacion {
       padding: 10px 0; } }
@@ -206,10 +209,6 @@ h5 {
           .indexSuperior__banner img {
             margin-left: 20px; } }
       .indexSuperior__banner h1 {
-        color: #333333;
-        font-size: 2rem;
-        font-weight: bold;
-        font-family: "Fraunces", serif;
         margin-left: 20px;
         justify-content: center; }
         @media only screen and (max-width: 992px) {
@@ -236,6 +235,9 @@ h5 {
     background-color: #D8D8D8;
     padding: 100px 0 100px 0;
     margin: 50px 0 0 0; }
+    @media only screen and (max-width: 576px) {
+      .indexMed {
+        padding: 50px 0; } }
     .indexMed__column {
       margin: 0; }
       .indexMed__columnFotos {
@@ -245,8 +247,15 @@ h5 {
           width: 450px;
           padding: 10px 0 0 10px;
           box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
+          @media only screen and (max-width: 576px) {
+            .indexMed__columnFotos img {
+              width: 100%; } }
       .indexMed__columnBox {
         width: 40%; }
+        @media only screen and (max-width: 992px) {
+          .indexMed__columnBox {
+            width: 80%;
+            padding: 0; } }
         .indexMed__columnBoxTexto {
           display: flex;
           flex-direction: column; }
@@ -277,9 +286,10 @@ h5 {
         font-size: 1rem;
         font-family: "Commissioner", sans-serif;
         color: #333333;
-        text-align: center;
+        text-align: start;
         font-weight: bold;
-        margin-top: 40px; }
+        margin-top: 40px;
+        padding-left: 20px; }
         @media only screen and (max-width: 576px) {
           .indexInferior__caja p {
             font-size: 0.7rem; } }
@@ -292,6 +302,9 @@ h5 {
 
 #index__fotosCarrousel {
   width: 70%; }
+  @media only screen and (max-width: 576px) {
+    #index__fotosCarrousel {
+      width: 100%; } }
 
 /* MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM */
 @media only screen and (max-width: 992px) {
@@ -305,9 +318,6 @@ h5 {
       justify-content: space-around; }
       .indexMed__columnFotos__foto {
         width: 50%; }
-    .indexMed__columnBox {
-      width: 80%;
-      padding: 0; }
   .indexInferior__texto {
     margin: 0 0 0 0; }
   .indexInferior__imagen {
@@ -317,21 +327,6 @@ h5 {
 
 /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
 @media only screen and (max-width: 576px) {
-  #index__fotosCarrousel {
-    width: 100%; }
-  .indexSuperior__banner h1 {
-    text-align: center; }
-  .indexMed {
-    padding: 50px 0 50px 0; }
-    .indexMed__columnFotos {
-      display: flex;
-      flex-wrap: wrap; }
-      .indexMed__columnFotos img {
-        width: 100%;
-        padding: 5px 0 0 0; }
-    .indexMed__columnBox {
-      width: 80%;
-      padding: 0; }
   .indexInferior {
     padding: 50px 0 50px 0; }
     .indexInferior__texto {
@@ -351,6 +346,9 @@ h5 {
 
 .QSTitulo h1 {
   margin-bottom: 100px; }
+  @media only screen and (max-width: 576px) {
+    .QSTitulo h1 {
+      margin-bottom: 50px; } }
 
 .QSSuperior {
   display: flex;
@@ -566,19 +564,20 @@ h5 {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px; }
+  .festSup__cardText a {
+    text-decoration: none; }
   .festSup__cardText p {
     font-size: 1rem;
     font-family: "Commissioner", sans-serif;
     color: #333333;
     text-align: none;
     font-weight: bold;
-    font-weight: bold;
     transition: transform 0.5s; }
     @media only screen and (max-width: 576px) {
       .festSup__cardText p {
         font-size: 0.7rem; } }
     .festSup__cardText p:hover {
-      transform: scale(1.1); }
+      transform: scale(1.2); }
 
 @media only screen and (max-width: 992px) {
   .festSup__card {

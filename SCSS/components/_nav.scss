@@ -1,8 +1,7 @@
-
-.barraNavegacion{
+.barraNavegacion {
     background-color: #165c85;
-    width: 100%;
     position: fixed;
+    width: 100%;
     @include mQ (tablet) {
         padding: 10px 0;
     }

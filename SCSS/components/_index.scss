@@ -20,10 +20,8 @@
             }
 
             & h1{
-                color: $color-letra-FC;
-                font-size: 2rem;
-                font-weight: bold;
-                font-family: $fuente-principal;
+                @extend %titulo;
+                
                 margin-left: 20px;
                 justify-content: center;
                 @include mQ (tablet) {
@@ -53,6 +51,9 @@
         background-color: #D8D8D8;
         padding: 100px 0 100px 0;
         margin: 50px 0 0 0;
+        @include mQ (mobile) {
+            padding: 50px 0;
+        }
     
         &__column {
             margin: 0;
@@ -66,12 +67,19 @@
                     width: 450px;
                     padding: 10px 0 0 10px;
                     box-shadow: $shadow;
+                    @include mQ (mobile) {
+                        width: 100%;
+                    }
                 }
             }
     
             &Box {
                 width: 40%;
-    
+                @include mQ (tablet){
+                    width: 80%;
+                    padding: 0;
+                }
+
                 &Texto {
                     display: flex;
                     flex-direction: column;
@@ -105,14 +113,14 @@
             width: 60%;
     
             & p {
-                @include parrafo ($color-letra-FC, center);
+                @include parrafo ($color-letra-FC, start);
                 margin-top: 40px;
+                padding-left: 20px;
             }
         }
     
         &__imagen {
-            display: flex;
-            justify-content: center;
+            @include flexrow (center);
     
             & img {
                 width: 80%;
@@ -124,6 +132,9 @@
 
 #index__fotosCarrousel {
     width: 70%;
+    @include mQ (mobile) {
+        width: 100%;
+    }
 }
 
 /* MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM */
@@ -144,11 +155,6 @@
                 width: 50%;
             }
         }
-
-        &Box {
-            width: 80%;
-            padding: 0;
-        }
     }
 
     .indexInferior__texto {
@@ -167,35 +173,8 @@
 /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
 
 @media only screen and (max-width: 576px) {
-    
-    #index__fotosCarrousel {
-        width: 100%;
-    }
 
-    .indexSuperior__banner h1{ 
-            text-align: center;    
-    }
-    
-    .indexMed {
-        padding: 50px 0 50px 0;
-    
-        &__columnFotos {
-            display: flex;
-            flex-wrap: wrap;
-    
-            & img {
-                width: 100%;
-                padding: 5px 0 0 0;
-            }  
-        }
-    
-        &__columnBox {
-            width: 80%;
-            padding: 0;
-        }
-    }
-    
-    .indexInferior {
+   .indexInferior {
         padding: 50px 0 50px 0;
     
         &__texto {

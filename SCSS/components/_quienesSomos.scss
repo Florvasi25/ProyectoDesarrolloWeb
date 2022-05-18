@@ -4,6 +4,9 @@
     &Titulo h1{
         @extend %titulo;
         margin-bottom: 100px;
+        @include mQ (mobile) {
+            margin-bottom: 50px;
+        }
     }
 
     &Superior {
