@@ -14,19 +14,35 @@
         background-color: #D8D8D8;
         height: fit-content;
         padding: 50px 100px 50px 100px;
+        @include mQ (tablet) {
+            display: none;
+        }
     
         &__imagenes {
             @include flexcolumn (none);
 
             &Foto {
                 width: 400px;
-                margin: 0 0 10px 0;
+                margin-bottom: 10px;
                 box-shadow: $shadow;
+                @include mQ (tablet) {
+                    width: 80%
+                }
+                @include mQ (mobile) {
+                    width: 100%
+                }
             }
         }
     
         &__texto {
             @include flexcolumn (none);
+            @include mQ (tablet) {
+                width: 80%;
+                padding: 30px 0;
+            }
+            @include mQ (mobile) {
+                width: 100%;
+            }
     
             &Secundario {
                 @include subtitulo($color-letra-FC, center);
@@ -34,23 +50,35 @@
             
             &Parrafo {
                 @include parrafo ($color-letra-FC, none);
-                padding: 0 0 0 50px;
+                padding-left: 50px;
                 text-indent: 1.5em;
+                @include mQ (tablet) {
+                    padding: 0
+                }
             }
     
             &Subtitulo {
                 @include parrafo ($color-letra-FC, center);
-                padding: 30px 0 0 0;
+                padding-top: 30px;
             }
     
             &Firma {
                 @include parrafo ($color-letra-FC, end);
-                padding: 50px 100px 0 0;
+                padding: 50px 0 0 0;
+                @include mQ (tablet) {
+                    align-self: flex-end;
+                }
             }
         }
 
         &992 {
             display: none;
+            @include mQ (tablet) {
+                display: flex;
+                flex-direction: column;
+                background-color: #D3D3D3;
+                padding: 50px;
+            }
         }
     }
 
@@ -60,103 +88,40 @@
         @include flexrow (space-evenly);
         margin-top: 100px;
         align-items: center;
+        @include mQ (tablet) {
+            @include flexcolumn (center);
+        }
+        @include mQ (mobile) {
+            width: 100%;
+        }
 
         &__caja {
             width: 30%;
-            padding: 50px 0 50px 0;
+            @include mQ (tablet) {
+                width: 70%
+            }
 
             &Parrafo {
                 @include parrafo ($color-letra-FO, none);
                 text-indent: 1.5em;
+                @include mQ (tablet) {
+                    padding-top: 75px;
+                }
             }
 
             &Imagenes {
                 gap: 15px;
-                padding: 100px 0 100px 0;
+                padding: 75px 0;
 
                 &Foto {
-                    height: 50vh;
+                    height: 65vh;
                     box-shadow: $shadow;
+                    @include mQ (mobile) {
+                        width: 45vw;
+                        height: auto;
+                    }
                 }
             }
         }
     }
-}
-
-
-@media only screen and (max-width: 992px) {
-
-    .QSSuperior {
-        display: none;
-
-        &992 {
-            display: flex;
-            flex-direction: column;
-            background-color: #D3D3D3;
-            padding: 50px;
-        }
-
-        &__imagenes {
-            display: flex;
-            align-items: center;
-
-            &Foto {
-                width: 80%;
-            }
-        }
-
-        &__texto {
-            width: 80%;
-            padding: 30px 0 30px 0;
-
-            &Parrafo {
-                padding: 0;
-            }
-
-            &Firma {
-                align-self: end;
-                padding: 50px 0 0 0;
-            }
-        }
-    }
-
-    .QSMedio {
-        display: flex;
-        flex-direction: column;
-
-        &__caja {
-            width: 70%;
-            padding: 100px 0 50px 0;
-
-            &Imagenes {
-                padding: 0 0 100px 0;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 576px) {
-
-    .QSSuperior992 {
-        padding: 50px 0 50px 0;
-    }
-
-    .QSSuperior__imagenesFoto {
-        width: 100%;
-    }
-
-    .QSSuperior__textoFirma {
-        padding-right: 20px;
-    }
-
-    .QSMedio {
-        width: 100%;
-        padding: 0;
-        margin: 50px 0 50px 0;
-
-        &__cajaImagenesFoto {
-            width: 45vw;
-            height: auto;
-        }
-    } 
 }

@@ -5,7 +5,8 @@
   font-family: "Fraunces", serif;
   color: #333333;
   font-size: 2rem;
-  text-align: center; }
+  text-align: center;
+  margin: 0 20px; }
   @media only screen and (max-width: 576px) {
     .indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
       font-size: 1.2rem; } }
@@ -201,7 +202,7 @@ h5 {
     width: 100%; }
     .indexSuperior__banner img {
       width: 7.5%; }
-      @media only screen and (max-width: 576px) {
+      @media only screen and (max-width: 992px) {
         .indexSuperior__banner img {
           margin-left: 20px; } }
     .indexSuperior__banner h1 {
@@ -226,7 +227,7 @@ h5 {
 
 .indexMed {
   background-color: #D8D8D8;
-  padding: 100px 0 100px 0;
+  padding: 100px 0;
   margin: 50px 0 0 0; }
   @media only screen and (max-width: 576px) {
     .indexMed {
@@ -331,6 +332,9 @@ h5 {
   background-color: #D8D8D8;
   height: fit-content;
   padding: 50px 100px 50px 100px; }
+  @media only screen and (max-width: 992px) {
+    .QSSuperior {
+      display: none; } }
   .QSSuperior__imagenes {
     display: flex;
     flex-direction: column;
@@ -338,13 +342,26 @@ h5 {
     align-items: none; }
     .QSSuperior__imagenesFoto {
       width: 400px;
-      margin: 0 0 10px 0;
+      margin-bottom: 10px;
       box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
+      @media only screen and (max-width: 992px) {
+        .QSSuperior__imagenesFoto {
+          width: 80%; } }
+      @media only screen and (max-width: 576px) {
+        .QSSuperior__imagenesFoto {
+          width: 100%; } }
   .QSSuperior__texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: none; }
+    @media only screen and (max-width: 992px) {
+      .QSSuperior__texto {
+        width: 80%;
+        padding: 30px 0; } }
+    @media only screen and (max-width: 576px) {
+      .QSSuperior__texto {
+        width: 100%; } }
     .QSSuperior__textoSecundario {
       font-size: 1.5rem;
       font-family: "Commissioner", sans-serif;
@@ -360,18 +377,21 @@ h5 {
       color: #333333;
       text-align: none;
       font-weight: bold;
-      padding: 0 0 0 50px;
+      padding-left: 50px;
       text-indent: 1.5em; }
       @media only screen and (max-width: 576px) {
         .QSSuperior__textoParrafo {
           font-size: 0.8rem; } }
+      @media only screen and (max-width: 992px) {
+        .QSSuperior__textoParrafo {
+          padding: 0; } }
     .QSSuperior__textoSubtitulo {
       font-size: 1rem;
       font-family: "Commissioner", sans-serif;
       color: #333333;
       text-align: center;
       font-weight: bold;
-      padding: 30px 0 0 0; }
+      padding-top: 30px; }
       @media only screen and (max-width: 576px) {
         .QSSuperior__textoSubtitulo {
           font-size: 0.8rem; } }
@@ -381,12 +401,21 @@ h5 {
       color: #333333;
       text-align: end;
       font-weight: bold;
-      padding: 50px 100px 0 0; }
+      padding: 50px 0 0 0; }
       @media only screen and (max-width: 576px) {
         .QSSuperior__textoFirma {
           font-size: 0.8rem; } }
+      @media only screen and (max-width: 992px) {
+        .QSSuperior__textoFirma {
+          align-self: flex-end; } }
   .QSSuperior992 {
     display: none; }
+    @media only screen and (max-width: 992px) {
+      .QSSuperior992 {
+        display: flex;
+        flex-direction: column;
+        background-color: #D3D3D3;
+        padding: 50px; } }
 
 .QSMedio {
   height: fit-content;
@@ -395,9 +424,20 @@ h5 {
   justify-content: space-evenly;
   margin-top: 100px;
   align-items: center; }
+  @media only screen and (max-width: 992px) {
+    .QSMedio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  @media only screen and (max-width: 576px) {
+    .QSMedio {
+      width: 100%; } }
   .QSMedio__caja {
-    width: 30%;
-    padding: 50px 0 50px 0; }
+    width: 30%; }
+    @media only screen and (max-width: 992px) {
+      .QSMedio__caja {
+        width: 70%; } }
     .QSMedio__cajaParrafo {
       font-size: 1rem;
       font-family: "Commissioner", sans-serif;
@@ -408,57 +448,19 @@ h5 {
       @media only screen and (max-width: 576px) {
         .QSMedio__cajaParrafo {
           font-size: 0.8rem; } }
+      @media only screen and (max-width: 992px) {
+        .QSMedio__cajaParrafo {
+          padding-top: 75px; } }
     .QSMedio__cajaImagenes {
       gap: 15px;
-      padding: 100px 0 100px 0; }
+      padding: 75px 0; }
       .QSMedio__cajaImagenesFoto {
-        height: 50vh;
+        height: 65vh;
         box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
-
-@media only screen and (max-width: 992px) {
-  .QSSuperior {
-    display: none; }
-    .QSSuperior992 {
-      display: flex;
-      flex-direction: column;
-      background-color: #D3D3D3;
-      padding: 50px; }
-    .QSSuperior__imagenes {
-      display: flex;
-      align-items: center; }
-      .QSSuperior__imagenesFoto {
-        width: 80%; }
-    .QSSuperior__texto {
-      width: 80%;
-      padding: 30px 0 30px 0; }
-      .QSSuperior__textoParrafo {
-        padding: 0; }
-      .QSSuperior__textoFirma {
-        align-self: end;
-        padding: 50px 0 0 0; }
-  .QSMedio {
-    display: flex;
-    flex-direction: column; }
-    .QSMedio__caja {
-      width: 70%;
-      padding: 100px 0 50px 0; }
-      .QSMedio__cajaImagenes {
-        padding: 0 0 100px 0; } }
-
-@media only screen and (max-width: 576px) {
-  .QSSuperior992 {
-    padding: 50px 0 50px 0; }
-  .QSSuperior__imagenesFoto {
-    width: 100%; }
-  .QSSuperior__textoFirma {
-    padding-right: 20px; }
-  .QSMedio {
-    width: 100%;
-    padding: 0;
-    margin: 50px 0 50px 0; }
-    .QSMedio__cajaImagenesFoto {
-      width: 45vw;
-      height: auto; } }
+        @media only screen and (max-width: 576px) {
+          .QSMedio__cajaImagenesFoto {
+            width: 45vw;
+            height: auto; } }
 
 .festSup h1 {
   display: flex;

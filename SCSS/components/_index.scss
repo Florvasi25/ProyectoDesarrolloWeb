@@ -12,7 +12,7 @@
 
             & img {
                 width: 7.5%;
-                @include mQ (mobile) {
+                @include mQ (tablet) {
                     margin-left: 20px;
                 }
             }
@@ -38,7 +38,7 @@
     
     &Med {
         background-color: #D8D8D8;
-        padding: 100px 0 100px 0;
+        padding: 100px 0;
         margin: 50px 0 0 0;
         @include mQ (mobile) {
             padding: 50px 0;

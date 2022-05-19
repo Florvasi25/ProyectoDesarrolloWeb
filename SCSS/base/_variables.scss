@@ -103,6 +103,7 @@ $tamanio-tiposmall:(
     color: $color-letra-FC;
     font-size: map-get($tamanio-tipolarge, titulo);
     text-align: center;
+    margin: 0 20px;
     @include mQ (mobile) {
         font-size: 1.2rem;
     }
