@@ -53,12 +53,12 @@ h5 {
   border-radius: 5px;
   padding: 15px 25px 15px 25px;
   align-self: center;
-  margin: 40px 0 20px 0;
+  margin: 40px 0 0 0;
   text-decoration: none;
   transition: color 0.5s, background-color 0.5s, border-color 0.5s; }
   @media only screen and (max-width: 576px) {
     .boton {
-      font-size: 0.7rem; } }
+      font-size: 0.8rem; } }
   .boton:hover {
     color: #D3D3D3;
     font-weight: bolder;
@@ -84,7 +84,7 @@ h5 {
     padding-bottom: 10px; }
     @media only screen and (max-width: 576px) {
       .barraNavegacion__texto {
-        font-size: 0.7rem; } }
+        font-size: 0.8rem; } }
     .barraNavegacion__texto::after {
       content: "";
       position: absolute;
@@ -115,7 +115,7 @@ h5 {
     position: relative; }
     @media only screen and (max-width: 576px) {
       .barraNavegacion__anchor {
-        font-size: 0.7rem; } }
+        font-size: 0.8rem; } }
     @media only screen and (max-width: 576px) {
       .barraNavegacion__anchor {
         font-size: 0.7rem; } }
@@ -188,161 +188,136 @@ h5 {
     .navbar-light .navbar-toggler-icon {
       background-image: url(../Imagenes/menuHamburguesa.png); } }
 
-/* CUERPO SUPERIOR */
-.index {
-  /* CUERPO Med INDEX */
-  /* CUERPO INFERIOR INDEX */ }
-  .indexSuperior {
-    width: 100%;
+.indexSuperior {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .indexSuperior__banner {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; }
-    .indexSuperior__banner {
+    align-items: center;
+    width: 100%; }
+    .indexSuperior__banner img {
+      width: 7.5%; }
+      @media only screen and (max-width: 576px) {
+        .indexSuperior__banner img {
+          margin-left: 20px; } }
+    .indexSuperior__banner h1 {
+      margin-left: 20px;
+      justify-content: center; }
+      @media only screen and (max-width: 576px) {
+        .indexSuperior__banner h1 {
+          margin: 0 20px 0 10px; } }
+  .indexSuperior__texto h3 {
+    font-size: 1.5rem;
+    font-family: "Commissioner", sans-serif;
+    color: #333333;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 0 20px 0; }
+    @media only screen and (max-width: 576px) {
+      .indexSuperior__texto h3 {
+        font-size: 1.3rem; } }
+    @media only screen and (max-width: 576px) {
+      .indexSuperior__texto h3 {
+        font-size: 0.7rem; } }
+
+.indexMed {
+  background-color: #D8D8D8;
+  padding: 100px 0 100px 0;
+  margin: 50px 0 0 0; }
+  @media only screen and (max-width: 576px) {
+    .indexMed {
+      padding: 50px 0; } }
+  .indexMed__column {
+    margin: 0; }
+    @media only screen and (max-width: 992px) {
+      .indexMed__column {
+        display: flex;
+        flex-direction: column-reverse; } }
+    .indexMed__columnFotos {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%; }
-      .indexSuperior__banner img {
-        width: 7.5%; }
+      flex-wrap: wrap; }
+      .indexMed__columnFotos img {
+        width: 450px;
+        padding: 10px 0 0 10px;
+        box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
         @media only screen and (max-width: 576px) {
-          .indexSuperior__banner img {
-            margin-left: 20px; } }
-      .indexSuperior__banner h1 {
-        margin-left: 20px;
-        justify-content: center; }
-        @media only screen and (max-width: 992px) {
-          .indexSuperior__banner h1 {
-            font-size: 1.8rem; } }
-        @media only screen and (max-width: 576px) {
-          .indexSuperior__banner h1 {
-            font-size: 1rem;
-            margin: 0 20px 0 10px; } }
-    .indexSuperior__texto h3 {
-      font-size: 1.5rem;
+          .indexMed__columnFotos img {
+            width: 100%; } }
+    .indexMed__columnBox {
+      width: 40%; }
+      @media only screen and (max-width: 992px) {
+        .indexMed__columnBox {
+          width: 80%;
+          padding: 0; } }
+      .indexMed__columnBoxTexto {
+        display: flex;
+        flex-direction: column; }
+        .indexMed__columnBoxTexto p {
+          font-size: 1rem;
+          font-family: "Commissioner", sans-serif;
+          color: #333333;
+          text-align: none;
+          font-weight: bold;
+          margin: 10px 0 10px 0; }
+          @media only screen and (max-width: 576px) {
+            .indexMed__columnBoxTexto p {
+              font-size: 0.8rem; } }
+
+.indexInferior {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: none;
+  padding-top: 50px; }
+  .indexInferior__texto {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 50px 0; }
+    @media only screen and (max-width: 576px) {
+      .indexInferior__texto {
+        flex-direction: column-reverse;
+        align-items: center; } }
+  .indexInferior__caja {
+    width: 60%; }
+    @media only screen and (max-width: 576px) {
+      .indexInferior__caja {
+        width: 80%; } }
+    .indexInferior__caja p {
+      font-size: 1rem;
       font-family: "Commissioner", sans-serif;
       color: #333333;
-      text-align: center;
+      text-align: start;
       font-weight: bold;
-      margin: 0 0 20px 0; }
+      margin-top: 40px;
+      padding-left: 20px; }
       @media only screen and (max-width: 576px) {
-        .indexSuperior__texto h3 {
-          font-size: 1rem; } }
+        .indexInferior__caja p {
+          font-size: 0.8rem; } }
       @media only screen and (max-width: 576px) {
-        .indexSuperior__texto h3 {
-          font-size: 0.7rem; } }
-  .indexMed {
-    background-color: #D8D8D8;
-    padding: 100px 0 100px 0;
-    margin: 50px 0 0 0; }
-    @media only screen and (max-width: 576px) {
-      .indexMed {
-        padding: 50px 0; } }
-    .indexMed__column {
-      margin: 0; }
-      .indexMed__columnFotos {
-        display: flex;
-        flex-wrap: wrap; }
-        .indexMed__columnFotos img {
-          width: 450px;
-          padding: 10px 0 0 10px;
-          box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
-          @media only screen and (max-width: 576px) {
-            .indexMed__columnFotos img {
-              width: 100%; } }
-      .indexMed__columnBox {
-        width: 40%; }
-        @media only screen and (max-width: 992px) {
-          .indexMed__columnBox {
-            width: 80%;
-            padding: 0; } }
-        .indexMed__columnBoxTexto {
-          display: flex;
-          flex-direction: column; }
-          .indexMed__columnBoxTexto p {
-            font-size: 1rem;
-            font-family: "Commissioner", sans-serif;
-            color: #333333;
-            text-align: none;
-            font-weight: bold;
-            margin: 10px 0 10px 0; }
-            @media only screen and (max-width: 576px) {
-              .indexMed__columnBoxTexto p {
-                font-size: 0.7rem; } }
-  .indexInferior {
-    height: fit-content;
+        .indexInferior__caja p {
+          margin: 0;
+          padding: 0;
+          text-indent: 1.5em; } }
+  .indexInferior__imagen {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: none;
-    padding: 50px 0 100px 0; }
-    .indexInferior__texto {
-      display: flex;
-      justify-content: center;
-      padding: 0 0 50px 0; }
-    .indexInferior__caja {
-      width: 60%; }
-      .indexInferior__caja p {
-        font-size: 1rem;
-        font-family: "Commissioner", sans-serif;
-        color: #333333;
-        text-align: start;
-        font-weight: bold;
-        margin-top: 40px;
-        padding-left: 20px; }
-        @media only screen and (max-width: 576px) {
-          .indexInferior__caja p {
-            font-size: 0.7rem; } }
-    .indexInferior__imagen {
-      display: flex;
-      justify-content: center; }
-      .indexInferior__imagen img {
-        width: 80%;
-        box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
+    justify-content: center; }
+    .indexInferior__imagen img {
+      width: 80%;
+      box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
+      @media only screen and (max-width: 576px) {
+        .indexInferior__imagen img {
+          width: 100%; } }
 
 #index__fotosCarrousel {
   width: 70%; }
   @media only screen and (max-width: 576px) {
     #index__fotosCarrousel {
       width: 100%; } }
-
-/* MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM MEDIUM */
-@media only screen and (max-width: 992px) {
-  .indexMed__column {
-    display: flex;
-    flex-direction: column-reverse; }
-    .indexMed__columnFotos {
-      width: 80%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around; }
-      .indexMed__columnFotos__foto {
-        width: 50%; }
-  .indexInferior__texto {
-    margin: 0 0 0 0; }
-  .indexInferior__imagen {
-    align-self: center; }
-    .indexInferior__imagenFoto {
-      padding: 0; } }
-
-/* SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-@media only screen and (max-width: 576px) {
-  .indexInferior {
-    padding: 50px 0 50px 0; }
-    .indexInferior__texto {
-      padding: 0 0 30px 0;
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center; }
-      .indexInferior__textoBoton {
-        font-size: 20px;
-        padding: 15px; }
-    .indexInferior__caja {
-      width: 80%;
-      padding: 0; }
-    .indexInferior__imagenFoto {
-      width: 100%;
-      padding: 0; } }
 
 .QSTitulo h1 {
   margin-bottom: 100px; }
@@ -378,7 +353,7 @@ h5 {
       font-weight: bold; }
       @media only screen and (max-width: 576px) {
         .QSSuperior__textoSecundario {
-          font-size: 1rem; } }
+          font-size: 1.3rem; } }
     .QSSuperior__textoParrafo {
       font-size: 1rem;
       font-family: "Commissioner", sans-serif;
@@ -389,7 +364,7 @@ h5 {
       text-indent: 1.5em; }
       @media only screen and (max-width: 576px) {
         .QSSuperior__textoParrafo {
-          font-size: 0.7rem; } }
+          font-size: 0.8rem; } }
     .QSSuperior__textoSubtitulo {
       font-size: 1rem;
       font-family: "Commissioner", sans-serif;
@@ -399,7 +374,7 @@ h5 {
       padding: 30px 0 0 0; }
       @media only screen and (max-width: 576px) {
         .QSSuperior__textoSubtitulo {
-          font-size: 0.7rem; } }
+          font-size: 0.8rem; } }
     .QSSuperior__textoFirma {
       font-size: 1rem;
       font-family: "Commissioner", sans-serif;
@@ -409,7 +384,7 @@ h5 {
       padding: 50px 100px 0 0; }
       @media only screen and (max-width: 576px) {
         .QSSuperior__textoFirma {
-          font-size: 0.7rem; } }
+          font-size: 0.8rem; } }
   .QSSuperior992 {
     display: none; }
 
@@ -432,7 +407,7 @@ h5 {
       text-indent: 1.5em; }
       @media only screen and (max-width: 576px) {
         .QSMedio__cajaParrafo {
-          font-size: 0.7rem; } }
+          font-size: 0.8rem; } }
     .QSMedio__cajaImagenes {
       gap: 15px;
       padding: 100px 0 100px 0; }
@@ -497,7 +472,7 @@ h5 {
   font-weight: bold; }
   @media only screen and (max-width: 576px) {
     .festSup h3 {
-      font-size: 0.7rem; } }
+      font-size: 0.8rem; } }
 
 .festSup__card h2 {
   font-size: 1.5rem;
@@ -508,7 +483,7 @@ h5 {
   padding-top: 50px; }
   @media only screen and (max-width: 576px) {
     .festSup__card h2 {
-      font-size: 1rem; } }
+      font-size: 1.3rem; } }
 
 .festSup__cardPrimer {
   flex-direction: row;
@@ -575,7 +550,7 @@ h5 {
     transition: transform 0.5s; }
     @media only screen and (max-width: 576px) {
       .festSup__cardText p {
-        font-size: 0.7rem; } }
+        font-size: 0.8rem; } }
     .festSup__cardText p:hover {
       transform: scale(1.2); }
 
@@ -660,7 +635,7 @@ h5 {
   font-weight: bold; }
   @media only screen and (max-width: 576px) {
     .contactoSup h2 {
-      font-size: 1rem; } }
+      font-size: 1.3rem; } }
 
 .contactoMed__box {
   padding: 25px; }
@@ -687,7 +662,7 @@ h5 {
       margin: 25px 0 25px 0; }
       @media only screen and (max-width: 576px) {
         .contactoMed__boxIzq h3 {
-          font-size: 1rem; } }
+          font-size: 1.3rem; } }
       @media only screen and (max-width: 992px) {
         .contactoMed__boxIzq h3 {
           align-self: center; } }
@@ -703,7 +678,7 @@ h5 {
       font-weight: bold; }
       @media only screen and (max-width: 576px) {
         .contactoMed__boxIzq p {
-          font-size: 0.7rem; } }
+          font-size: 0.8rem; } }
   .contactoMed__box h2 {
     font-size: 1.5rem;
     font-family: "Commissioner", sans-serif;
@@ -714,7 +689,7 @@ h5 {
     margin: 30px 0 30px 0; }
     @media only screen and (max-width: 576px) {
       .contactoMed__box h2 {
-        font-size: 1rem; } }
+        font-size: 1.3rem; } }
     @media only screen and (max-width: 992px) {
       .contactoMed__box h2 {
         padding-top: 50px; } }
@@ -737,7 +712,7 @@ h5 {
       margin: 30px 0 30px 0; }
       @media only screen and (max-width: 576px) {
         .contactoMed__boxDer p {
-          font-size: 1rem; } }
+          font-size: 1.3rem; } }
 
 .contactoInf__imagen {
   display: flex;
@@ -771,7 +746,7 @@ h5 {
   font-weight: bold; }
   @media only screen and (max-width: 576px) {
     .form-label {
-      font-size: 0.7rem; } }
+      font-size: 0.8rem; } }
 
 .footer {
   display: flex;
@@ -803,7 +778,7 @@ h5 {
         margin-left: 10px; }
         @media only screen and (max-width: 576px) {
           .footer__logoTexto p {
-            font-size: 0.7rem; } }
+            font-size: 0.8rem; } }
   .footer__hv {
     display: flex;
     margin: 0 50px 0 0; }
@@ -847,4 +822,4 @@ h5 {
         font-weight: lighter; }
         @media only screen and (max-width: 576px) {
           .footer__hvLista p {
-            font-size: 0.7rem; } }
+            font-size: 0.8rem; } }

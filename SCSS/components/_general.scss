@@ -25,7 +25,7 @@ h5 {
 
 .boton {
     @include parrafo ($color-letra-FC, none);
-    @include border(center, 40px 0 20px 0);
+    @include border(center, 40px 0 0 0);
     text-decoration: none;
     transition: color 0.5s, background-color 0.5s, border-color 0.5s;
 
