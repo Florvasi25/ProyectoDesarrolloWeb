@@ -476,6 +476,11 @@ h5 {
     .festSup h3 {
       font-size: 0.8rem; } }
 
+@media only screen and (max-width: 992px) {
+  .festSup__card {
+    width: 100%;
+    gap: 15px; } }
+
 .festSup__card h2 {
   font-size: 1.5rem;
   font-family: "Commissioner", sans-serif;
@@ -493,8 +498,9 @@ h5 {
   align-items: center;
   width: 95%;
   background-color: #E0E2E1;
-  padding: 20px 0 20px 0;
-  font-weight: bolder; }
+  padding: 30px 0;
+  font-weight: bolder;
+  gap: 15px; }
 
 .festSup__cardSegundo {
   flex-direction: row-reverse;
@@ -502,8 +508,9 @@ h5 {
   align-items: center;
   width: 95%;
   background-color: #D8D8D8;
-  padding: 20px 0 20px 0;
-  font-weight: bolder; }
+  padding: 30px 0;
+  font-weight: bolder;
+  gap: 15px; }
 
 .festSup__cardTercer {
   flex-direction: row;
@@ -511,8 +518,9 @@ h5 {
   align-items: center;
   width: 95%;
   background-color: #C9C9C9;
-  padding: 20px 0 20px 0;
-  font-weight: bolder; }
+  padding: 30px 0;
+  font-weight: bolder;
+  gap: 15px; }
 
 .festSup__cardCuarto {
   flex-direction: row-reverse;
@@ -520,8 +528,9 @@ h5 {
   align-items: center;
   width: 95%;
   background-color: #C1C1C1;
-  padding: 20px 0 20px 0;
-  font-weight: bolder; }
+  padding: 30px 0;
+  font-weight: bolder;
+  gap: 15px; }
 
 .festSup__cardQuinto {
   flex-direction: row;
@@ -529,18 +538,28 @@ h5 {
   align-items: center;
   width: 95%;
   background-color: #B7B7B7;
-  padding: 20px 0 20px 0;
-  font-weight: bolder; }
+  padding: 30px 0;
+  font-weight: bolder;
+  gap: 15px; }
 
 .festSup__card img {
   width: 30%;
   object-fit: cover; }
+  @media only screen and (max-width: 992px) {
+    .festSup__card img {
+      width: 45%; } }
+  @media only screen and (max-width: 576px) {
+    .festSup__card img {
+      width: 100%; } }
 
 .festSup__cardText {
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px; }
+  @media only screen and (max-width: 992px) {
+    .festSup__cardText {
+      margin: 25px 0 50px 0; } }
   .festSup__cardText a {
     text-decoration: none; }
   .festSup__cardText p {
@@ -555,24 +574,6 @@ h5 {
         font-size: 0.8rem; } }
     .festSup__cardText p:hover {
       transform: scale(1.2); }
-
-@media only screen and (max-width: 992px) {
-  .festSup__card {
-    width: 100%; }
-    .festSup__card img {
-      width: 50%; }
-    .festSup__cardText {
-      margin: 50px 0 25px 0; } }
-
-@media only screen and (max-width: 576px) {
-  .festSup__cardPrimer, .festSup__cardSegundo, .festSup__cardTercero, .festSup__cardCuarto, .festSup__cardQuinto {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 15px; }
-  .festSup__card img {
-    width: 100%; }
-  .festSup__cardText {
-    margin: 30px 0 30px 0; } }
 
 .galeriaSup h1 {
   display: flex;
