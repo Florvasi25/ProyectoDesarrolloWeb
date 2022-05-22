@@ -107,7 +107,7 @@
 }
 
 .navbar > .container {
-    margin: 0 150px 0 150px;
+    margin: 0 150px;
     @include mQ (tablet) {
         margin: 0 100px;
     }

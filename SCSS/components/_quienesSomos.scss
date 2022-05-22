@@ -13,7 +13,7 @@
         @include flexrow (space-between);
         background-color: #D8D8D8;
         height: fit-content;
-        padding: 50px 100px 50px 100px;
+        padding: 50px 100px;
         @include mQ (tablet) {
             display: none;
         }
@@ -29,7 +29,7 @@
                     width: 80%
                 }
                 @include mQ (mobile) {
-                    width: 100%
+                    width: 100%;
                 }
             }
         }
@@ -64,7 +64,7 @@
     
             &Firma {
                 @include parrafo ($color-letra-FC, end);
-                padding: 50px 0 0 0;
+                padding-top: 50px;
                 @include mQ (tablet) {
                     align-self: flex-end;
                 }
@@ -114,7 +114,7 @@
                 padding: 75px 0;
 
                 &Foto {
-                    height: 65vh;
+                    height: 60vh;
                     box-shadow: $shadow;
                     @include mQ (mobile) {
                         width: 45vw;

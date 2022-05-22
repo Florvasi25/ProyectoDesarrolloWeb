@@ -52,7 +52,7 @@ h5 {
   border: solid 1px;
   border-color: #333333;
   border-radius: 5px;
-  padding: 15px 25px 15px 25px;
+  padding: 15px 25px;
   align-self: center;
   margin: 40px 0 0 0;
   text-decoration: none;
@@ -240,11 +240,12 @@ h5 {
         flex-direction: column-reverse; } }
     .indexMed__columnFotos {
       display: flex;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      padding-top: 25px; }
       .indexMed__columnFotos img {
         width: 450px;
         padding: 10px 0 0 10px;
-        box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
+        box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.5); }
         @media only screen and (max-width: 576px) {
           .indexMed__columnFotos img {
             width: 100%; } }
@@ -309,7 +310,7 @@ h5 {
     justify-content: center; }
     .indexInferior__imagen img {
       width: 80%;
-      box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
+      box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.5); }
       @media only screen and (max-width: 576px) {
         .indexInferior__imagen img {
           width: 100%; } }
@@ -331,7 +332,7 @@ h5 {
   justify-content: space-between;
   background-color: #D8D8D8;
   height: fit-content;
-  padding: 50px 100px 50px 100px; }
+  padding: 50px 100px; }
   @media only screen and (max-width: 992px) {
     .QSSuperior {
       display: none; } }
@@ -343,7 +344,7 @@ h5 {
     .QSSuperior__imagenesFoto {
       width: 400px;
       margin-bottom: 10px;
-      box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
+      box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.5); }
       @media only screen and (max-width: 992px) {
         .QSSuperior__imagenesFoto {
           width: 80%; } }
@@ -401,7 +402,7 @@ h5 {
       color: #333333;
       text-align: end;
       font-weight: bold;
-      padding: 50px 0 0 0; }
+      padding-top: 50px; }
       @media only screen and (max-width: 576px) {
         .QSSuperior__textoFirma {
           font-size: 0.8rem; } }
@@ -455,8 +456,8 @@ h5 {
       gap: 15px;
       padding: 75px 0; }
       .QSMedio__cajaImagenesFoto {
-        height: 65vh;
-        box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493); }
+        height: 60vh;
+        box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.5); }
         @media only screen and (max-width: 576px) {
           .QSMedio__cajaImagenesFoto {
             width: 45vw;
@@ -544,7 +545,8 @@ h5 {
 
 .festSup__card img {
   width: 30%;
-  object-fit: cover; }
+  object-fit: cover;
+  border-radius: 20px 0; }
   @media only screen and (max-width: 992px) {
     .festSup__card img {
       width: 45%; } }
@@ -662,7 +664,7 @@ h5 {
       border: solid 1px;
       border-color: #333333;
       border-radius: 5px;
-      padding: 15px 25px 15px 25px;
+      padding: 15px 25px;
       align-self: flex-start;
       margin: 25px 0 25px 0; }
       @media only screen and (max-width: 576px) {
@@ -758,11 +760,12 @@ h5 {
   justify-content: space-evenly;
   background-color: #333333;
   flex-wrap: wrap;
-  align-items: center; }
+  align-items: center;
+  bottom: 0; }
   .footer__logo {
     display: flex;
-    margin: 0 0 0 50px;
-    padding: 75px 0 75px 0; }
+    margin-left: 50px;
+    padding: 75px 0; }
     @media only screen and (max-width: 576px) {
       .footer__logo {
         align-self: center;
@@ -786,31 +789,31 @@ h5 {
             font-size: 0.8rem; } }
   .footer__hv {
     display: flex;
-    margin: 0 50px 0 0; }
+    margin-right: 50px; }
     @media only screen and (max-width: 992px) {
       .footer__hv {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 0 30px 30px 0; } }
+        margin: 0 30px; } }
     @media only screen and (max-width: 576px) {
       .footer__hv {
-        padding: 0 0 0 0;
-        margin: 0 0 50px 0; } }
+        padding: 0;
+        margin-bottom: 50px; } }
     .footer__hvLista {
       list-style: none;
       display: flex;
       align-items: center;
-      padding: 0 0 0 20px; }
+      padding-left: 20px; }
       @media only screen and (max-width: 992px) {
         .footer__hvLista {
           padding: 30px 0 0 10px; } }
       @media only screen and (max-width: 576px) {
         .footer__hvLista {
-          padding: 30px 0 0 0; } }
+          padding-top: 30px; } }
       .footer__hvLista img {
         height: 30px;
-        margin: 0 15px 0 15px;
+        margin: 0 15px;
         transition: transform 0.5s; }
         .footer__hvLista img:hover {
           transform: scale(1.2); }

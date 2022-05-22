@@ -55,6 +55,7 @@
             &Fotos {
                 display: flex;
                 flex-wrap: wrap;
+                padding-top: 25px;
     
                 & img{
                     width: 450px;
@@ -83,7 +84,7 @@
     
                     & p {
                         @include parrafo ($color-letra-FC, none);
-                        margin: 10px 0 10px 0;
+                        margin: 10px 0;
                     }
                 }
             }

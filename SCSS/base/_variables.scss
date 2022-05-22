@@ -4,7 +4,7 @@ $color-principal: #f4f4f4;
 $color-letra-FO: #D3D3D3;
 $color-letra-FC: #333333;
 
-$shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.493);
+$shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.5);
 
 /* TIPOGRAFIAS */
 
@@ -74,7 +74,7 @@ $tamanio-tiposmall:(
     border: solid 1px;
     border-color: $color-letra-FC;
     border-radius: 5px;
-    padding: 15px 25px 15px 25px;
+    padding: 15px 25px;
     align-self: $alignself;
     margin: $margin;
 }
