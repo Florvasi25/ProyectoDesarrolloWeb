@@ -69,7 +69,8 @@ h5 {
 .barraNavegacion {
   background-color: #165c85;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
   @media only screen and (max-width: 992px) {
     .barraNavegacion {
       padding: 10px 0; } }
@@ -167,7 +168,7 @@ h5 {
     color: #D3D3D3; }
 
 .navbar > .container {
-  margin: 0 150px 0 150px; }
+  margin: 0 150px; }
   @media only screen and (max-width: 992px) {
     .navbar > .container {
       margin: 0 100px; } }
@@ -185,9 +186,11 @@ h5 {
   .navbar-toggler:focus {
     color: #D3D3D3; }
   .navbar-light .navbar-toggler {
-    border-color: #D3D3D3; }
+    border-color: #D3D3D3;
+    padding: 0.10rem 0.45rem; }
     .navbar-light .navbar-toggler-icon {
-      background-image: url(../Imagenes/menuHamburguesa.png); } }
+      background-image: url(../Imagenes/menuHamburguesa.png);
+      width: 25px; } }
 
 .indexSuperior {
   width: 100%;
@@ -264,7 +267,7 @@ h5 {
           color: #333333;
           text-align: none;
           font-weight: bold;
-          margin: 10px 0 10px 0; }
+          margin: 10px 0; }
           @media only screen and (max-width: 576px) {
             .indexMed__columnBoxTexto p {
               font-size: 0.8rem; } }
@@ -693,7 +696,7 @@ h5 {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    margin: 30px 0 30px 0; }
+    margin: 30px 0; }
     @media only screen and (max-width: 576px) {
       .contactoMed__box h2 {
         font-size: 1.3rem; } }
@@ -716,7 +719,7 @@ h5 {
       color: #333333;
       text-align: start;
       font-weight: bold;
-      margin: 30px 0 30px 0; }
+      margin: 30px 0; }
       @media only screen and (max-width: 576px) {
         .contactoMed__boxDer p {
           font-size: 1.3rem; } }
@@ -725,10 +728,10 @@ h5 {
   display: flex;
   justify-content: center;
   gap: 25px;
-  margin: 50px 0 50px 0; }
+  margin: 50px 0; }
   .contactoInf__imagen img {
     width: 45%;
-    border-radius: 20px 0 20px 0; }
+    border-radius: 20px 0; }
     @media only screen and (max-width: 576px) {
       .contactoInf__imagen img {
         width: 100%; }

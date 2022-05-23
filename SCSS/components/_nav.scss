@@ -2,6 +2,7 @@
     background-color: #165c85;
     position: fixed;
     width: 100%;
+    z-index: 10;
     @include mQ (tablet) {
         padding: 10px 0;
     }
@@ -135,9 +136,11 @@
     
     .navbar-light .navbar-toggler {
         border-color: #D3D3D3;
-    
+        padding: 0.10rem 0.45rem; 
+
         &-icon {
             background-image: url(../Imagenes/menuHamburguesa.png);
+            width: 25px;
         }
     }
 }
