@@ -248,7 +248,8 @@ h5 {
       .indexMed__columnFotos img {
         width: 450px;
         padding: 10px 0 0 10px;
-        box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.5); }
+        box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.5);
+        border-radius: 20px 0; }
         @media only screen and (max-width: 576px) {
           .indexMed__columnFotos img {
             width: 100%; } }
@@ -312,8 +313,9 @@ h5 {
     display: flex;
     justify-content: center; }
     .indexInferior__imagen img {
-      width: 80%;
-      box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.5); }
+      width: 70%;
+      box-shadow: 15px 15px 15px -3px rgba(0, 0, 0, 0.5);
+      border-radius: 20px 0; }
       @media only screen and (max-width: 576px) {
         .indexInferior__imagen img {
           width: 100%; } }
@@ -324,11 +326,9 @@ h5 {
     #index__fotosCarrousel {
       width: 100%; } }
 
-.QSTitulo h1 {
-  margin-bottom: 100px; }
-  @media only screen and (max-width: 576px) {
-    .QSTitulo h1 {
-      margin-bottom: 50px; } }
+@media only screen and (max-width: 576px) {
+  .QSTitulo h1 {
+    margin-bottom: 50px; } }
 
 .QSSuperior {
   display: flex;

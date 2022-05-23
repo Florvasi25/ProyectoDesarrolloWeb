@@ -40,7 +40,7 @@
                             <a class="nav-link barraNavegacion__anchor" aria-current="page" href="../Paginas/quienes-somos.html">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link barraNavegacion__anchor" href="../Paginas/festival-2022.html">Festival 2021</a>
+                            <a class="nav-link barraNavegacion__anchor" href="../Paginas/festival-2021.html">Festival 2021</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link barraNavegacion__anchor" href="../Paginas/galeria.html">Galería</a>
@@ -57,7 +57,7 @@
         <!-- Main -->
     
         <main class="contacto">
-            <section class="contactoSup">
+            <section class="contactoSup" data-aos="fade-up">
                 <h1>SE PARTE DE NUESTRA ESCUELA</h1>
                 <h5>___________________________</h5>    
                 <h2>Sumate a alguno de nuestros grupos</h2>
@@ -74,9 +74,9 @@
                         <p>17:30h niñas de 4 y 5 años</p>
                         <p>18:30h niñas de 6 a 8 años</p>
                     </div>
-                    <div class="col-lg-7 col-sm-12">
+                    <div class="col-lg-7 col-sm-12" data-aos="fade-up">
                         <h2>Completá este formulario para más información</h2>
-                        <div class="contactoMed__boxDer">
+                        <form action="form.php" method="post" class="contactoMed__boxDer">
                             <p>Datos del alumno</p>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
@@ -100,7 +100,32 @@
                                 <input type="age" class="form-control" id="exampleFormControlInput1">
                             </div>
                             <a href="#" class="boton">ENVIAR</a>
-                        </div>
+                        </form>
+                        <!-- <div class="contactoMed__boxDer">
+                            <p>Datos del alumno</p>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Edad</label>
+                                <input type="age" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <p>Datos del adulto a cargo</p>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                                <input type="age" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Teléfono de Contacto</label>
+                                <input type="age" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Dirección de e-mail</label>
+                                <input type="age" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <a href="#" class="boton">ENVIAR</a>
+                        </div> -->
                     </div> 
                 </div>
             </section>
@@ -161,7 +186,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            offset: 300,
+            offset: 250,
             duration: 750
         });
     </script>    

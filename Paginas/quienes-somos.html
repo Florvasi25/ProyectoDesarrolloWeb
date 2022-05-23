@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="../Imagenes/Favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Fraunces:opsz,wght@9..144,300&display=swap" rel="stylesheet">    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <meta name="keywords" content="escuela, escuela integral, danza, academia, danzas clásicas, danzas españolas, tap, clásico, español, zapateo americano, escuela de danza, bailarina, ballet, deán funes, dean funes, ischilín, ischilin, córdoba capital, cordoba capital profesora de danzas, profesorado, historia, quienes somos, comienzos, conocenos, nosotras, nosotros, directora">
     <meta name="description" content="Mejorá tus posiciones mediante las técnicas de la Danza Clásica y animate a aprender sobre la cultura de España y las diferentes danzas particulares de cada región. Contamos con diplomatura en profesorado de Danzas Clásicas, Españolas y de Zapateo Americano. Conocé un poquito de nuestra hsitoria.">
     <link rel="stylesheet" href="../css/main.css">
@@ -38,7 +39,7 @@
                             <a class="nav-link barraNavegacion__anchor" aria-current="page" href="../Paginas/quienes-somos.html">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link barraNavegacion__anchor" href="../Paginas/festival-2022.html">Festival 2021</a>
+                            <a class="nav-link barraNavegacion__anchor" href="../Paginas/festival-2021.html">Festival 2021</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link barraNavegacion__anchor" href="../Paginas/galeria.html">Galería</a>
@@ -55,10 +56,11 @@
         <!-- Main -->
         
         <main class="QS">
-            <section class="QSTitulo">
+            <section class="QSTitulo" data-aos="fade-up">
                 <h1>¡BIENVENIDOS A NUESTRA ACADEMIA!</h1>
+                <h5>___________________________</h5>    
             </section>
-            <section class="QSSuperior">
+            <section class="QSSuperior" data-aos="fade-up">
                 <div class="QSSuperior__imagenes">
                     <img src="../Imagenes/QS_1_.webp" alt="foto antigua de alumnas con la directora en el salón" class="QSSuperior__imagenesFoto">
                     <img src="../Imagenes/QS_2_.webp" alt="foto antigua de las alumas ataviadas en un desfile" class="QSSuperior__imagenesFoto">
@@ -108,7 +110,7 @@
                     <p class="QSSuperior__textoFirma">Profesora Gabriela Guzmán</p>
                 </div>
             </section>
-            <section class="QSSuperior992">
+            <section class="QSSuperior992" data-aos="fade-up">
                 <div class="d-flex flex-column align-items-center">
                     <h2 class="QSSuperior__textoSecundario">Un poco de nuestra historia...</h2>
                     <div class="QSSuperior__texto">
@@ -163,7 +165,7 @@
                     <p class="QSSuperior__textoFirma">Profesora Gabriela Guzmán</p>
                 </div>
             </section>
-            <section class="QSMedio container row d-flex flex-wrap">
+            <section class="QSMedio container row d-flex flex-wrap" data-aos="fade-up">
                 <div class="col-lg-6 col-md-6 col-sm-12 QSMedio__caja">
                     <div class="QSMedio__cajaParrafo">
                     <p>Gabriela Guzmán, nuestra directora,
@@ -233,7 +235,14 @@
                     </li>
                 </ul>
             </section>
-        </footer>  
+        </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        offset: 250,
+        duration: 750
+    });
+    </script>       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html> 

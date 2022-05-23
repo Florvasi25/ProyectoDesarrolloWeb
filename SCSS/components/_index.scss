@@ -61,6 +61,7 @@
                     width: 450px;
                     padding: 10px 0 0 10px;
                     box-shadow: $shadow;
+                    border-radius: 20px 0;
                     @include mQ (mobile) {
                         width: 100%;
                     }
@@ -127,8 +128,9 @@
             @include flexrow (center);
     
             & img {
-                width: 80%;
+                width: 70%;
                 box-shadow: $shadow;
+                border-radius: 20px 0;
                 @include mQ (mobile) {
                     width: 100%;
                 }
