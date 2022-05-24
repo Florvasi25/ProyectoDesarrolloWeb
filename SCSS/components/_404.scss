@@ -10,22 +10,31 @@
     }
 
     &Cientos {
-        @include flexcolumn (center);
+        @include flexrow (space-evenly);
         background-color: $color-letra-FO;
-        padding: 50px;
-        width: 80%;
+        padding: 50px 20px;
+        width: 90%;
+        align-items: center;
+        flex-wrap: wrap;
         border-radius: 25px;
+        gap: 20px;  
 
         img {
             border-radius: 20px 0;
-            width: 40%;
-        }
+            width: 50vw;
+            height: auto;
+            @include mQ (mobile) {
+                width: 100%;
+            }
+        }   
     
         a {
             text-decoration: none;
     
             h2 {
                 @include subtitulo ($color-letra-FC, center);
+                margin: 0;
+                
             }
         }
     }

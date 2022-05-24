@@ -843,16 +843,21 @@ h5 {
     padding-bottom: 50px; }
   .cuatroCientos {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     background-color: #D3D3D3;
-    padding: 50px;
-    width: 80%;
-    border-radius: 25px; }
+    padding: 50px 20px;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    gap: 20px; }
     .cuatroCientos img {
       border-radius: 20px 0;
-      width: 40%; }
+      width: 50vw;
+      height: auto; }
+      @media only screen and (max-width: 576px) {
+        .cuatroCientos img {
+          width: 100%; } }
     .cuatroCientos a {
       text-decoration: none; }
       .cuatroCientos a h2 {
@@ -860,7 +865,8 @@ h5 {
         font-family: "Commissioner", sans-serif;
         color: #333333;
         text-align: center;
-        font-weight: bold; }
+        font-weight: bold;
+        margin: 0; }
         @media only screen and (max-width: 576px) {
           .cuatroCientos a h2 {
             font-size: 1.3rem; } }
