@@ -1,16 +1,16 @@
 .cuatro {
-    @extend %main;
+    // @extend %main;
     padding-top: 50px;
     background-color: #165c85;
 
     h1 {
-        @extend %titulo;
+        // @extend %titulo;
         color: $color-letra-FO;
         padding-bottom: 50px;
     }
 
     &Cientos {
-        @include flexrow (space-evenly);
+        // @include flexrow (space-evenly);
         background-color: $color-letra-FO;
         padding: 50px 20px;
         width: 90%;
@@ -23,16 +23,16 @@
             border-radius: 20px 0;
             width: 50vw;
             height: auto;
-            @include mQ (mobile) {
-                width: 100%;
-            }
+            // @include mQ (mobile) {
+            //     width: 100%;
+            // }
         }   
     
         a {
             text-decoration: none;
     
             h2 {
-                @include subtitulo ($color-letra-FC, center);
+                // @include subtitulo ($color-letra-FC, center);
                 margin: 0;
                 
             }

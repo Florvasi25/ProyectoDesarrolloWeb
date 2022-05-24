@@ -1,17 +1,17 @@
 /* COLORES */
 /* TIPOGRAFIAS */
 /* VARIABLES */
-.indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto, .cuatro h1 {
+.indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
   font-family: "Fraunces", serif;
   color: #333333;
   font-size: 2rem;
   text-align: center;
   margin: 0 20px; }
   @media only screen and (max-width: 576px) {
-    .indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto, .cuatro h1 {
+    .indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
       font-size: 1.2rem; } }
 
-.index, .QS, .fest, .galeria, .contacto, .cuatro {
+.index, .QS, .fest, .galeria, .contacto {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@
   width: 100%;
   padding: 150px 0; }
   @media only screen and (max-width: 576px) {
-    .index, .QS, .fest, .galeria, .contacto, .cuatro {
+    .index, .QS, .fest, .galeria, .contacto {
       padding: 125px 0; } }
 
 * {
@@ -842,8 +842,6 @@ h5 {
     color: #D3D3D3;
     padding-bottom: 50px; }
   .cuatroCientos {
-    display: flex;
-    justify-content: space-evenly;
     background-color: #D3D3D3;
     padding: 50px 20px;
     width: 90%;
@@ -855,18 +853,7 @@ h5 {
       border-radius: 20px 0;
       width: 50vw;
       height: auto; }
-      @media only screen and (max-width: 576px) {
-        .cuatroCientos img {
-          width: 100%; } }
     .cuatroCientos a {
       text-decoration: none; }
       .cuatroCientos a h2 {
-        font-size: 1.5rem;
-        font-family: "Commissioner", sans-serif;
-        color: #333333;
-        text-align: center;
-        font-weight: bold;
         margin: 0; }
-        @media only screen and (max-width: 576px) {
-          .cuatroCientos a h2 {
-            font-size: 1.3rem; } }
