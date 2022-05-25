@@ -1,14 +1,14 @@
 /* COLORES */
 /* TIPOGRAFIAS */
 /* VARIABLES */
-.indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto, .cuatro h1 {
+.indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
   font-family: "Fraunces", serif;
   color: #333333;
   font-size: 2rem;
   text-align: center;
   margin: 0 20px; }
   @media only screen and (max-width: 576px) {
-    .indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto, .cuatro h1 {
+    .indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
       font-size: 1.2rem; } }
 
 .index, .QS, .fest, .galeria, .contacto, .cuatro {
@@ -836,11 +836,22 @@ h5 {
             font-size: 0.8rem; } }
 
 .cuatro {
-  padding-top: 50px;
+  padding-top: 25px;
   background-color: #165c85; }
   .cuatro h1 {
+    font-size: 125px;
     color: #D3D3D3;
-    padding-bottom: 50px; }
+    padding-bottom: 25px; }
+  .cuatro h2 {
+    font-size: 1.5rem;
+    font-family: "Commissioner", sans-serif;
+    color: #333333;
+    text-align: center;
+    font-weight: bold;
+    padding: 50px 0; }
+    @media only screen and (max-width: 576px) {
+      .cuatro h2 {
+        font-size: 1.3rem; } }
   .cuatroCientos {
     display: flex;
     justify-content: space-evenly;
@@ -853,20 +864,25 @@ h5 {
     gap: 20px; }
     .cuatroCientos img {
       border-radius: 20px 0;
-      width: 50vw;
+      width: 30vw;
       height: auto; }
       @media only screen and (max-width: 576px) {
         .cuatroCientos img {
-          width: 100%; } }
-    .cuatroCientos a {
-      text-decoration: none; }
-      .cuatroCientos a h2 {
-        font-size: 1.5rem;
-        font-family: "Commissioner", sans-serif;
-        color: #333333;
-        text-align: center;
-        font-weight: bold;
-        margin: 0; }
-        @media only screen and (max-width: 576px) {
-          .cuatroCientos a h2 {
-            font-size: 1.3rem; } }
+          width: 80%; } }
+    .cuatroCientosCuatro {
+      width: 50vw; }
+      @media only screen and (max-width: 576px) {
+        .cuatroCientosCuatro {
+          width: 100vw; } }
+      .cuatroCientosCuatro a {
+        text-decoration: none; }
+        .cuatroCientosCuatro a p {
+          font-size: 1.5rem;
+          font-family: "Commissioner", sans-serif;
+          color: #333333;
+          text-align: center;
+          font-weight: bold;
+          margin: 0; }
+          @media only screen and (max-width: 576px) {
+            .cuatroCientosCuatro a p {
+              font-size: 1.3rem; } }
