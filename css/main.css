@@ -22,50 +22,6 @@
     .index, .QS, .fest, .galeria, .contacto, .cuatro {
       padding: 125px 0; } }
 
-* {
-  margin: 0;
-  padding: 0; }
-
-/* GOOGLE FONTS
-
-font-family: 'DM Serif Display', serif;
-font-family: 'Mulish', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Commissioner', sans-serif;
-font-family: 'Fraunces', serif;
-
-*/
-p {
-  margin: 0; }
-
-h5 {
-  margin: 25px 0 50px 0;
-  font-size: 16px;
-  text-align: center; }
-
-.boton {
-  font-size: 1rem;
-  font-family: "Commissioner", sans-serif;
-  color: #333333;
-  text-align: none;
-  font-weight: bold;
-  border: solid 1px;
-  border-color: #333333;
-  border-radius: 5px;
-  padding: 15px 25px;
-  align-self: center;
-  margin: 40px 0 0 0;
-  text-decoration: none;
-  transition: color 0.5s, background-color 0.5s, border-color 0.5s; }
-  @media only screen and (max-width: 576px) {
-    .boton {
-      font-size: 0.8rem; } }
-  .boton:hover {
-    color: #D3D3D3;
-    font-weight: bolder;
-    background-color: #165c85;
-    cursor: pointer; }
-
 .barraNavegacion {
   background-color: #165c85;
   position: fixed;
@@ -758,9 +714,6 @@ h5 {
     .form-label {
       font-size: 0.8rem; } }
 
-.boton {
-  background-color: #bdbdbd; }
-
 .footer {
   display: flex;
   justify-content: space-evenly;
@@ -911,3 +864,47 @@ h5 {
     @media only screen and (max-width: 576px) {
       .exito h2 {
         font-size: 1.3rem; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* GOOGLE FONTS
+
+font-family: 'DM Serif Display', serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Commissioner', sans-serif;
+font-family: 'Fraunces', serif;
+
+*/
+p {
+  margin: 0; }
+
+h5 {
+  margin: 25px 0 50px 0;
+  font-size: 16px;
+  text-align: center; }
+
+.boton {
+  font-size: 1rem;
+  font-family: "Commissioner", sans-serif;
+  color: #333333;
+  text-align: none;
+  font-weight: bold;
+  border: solid 1px;
+  border-color: #333333;
+  border-radius: 5px;
+  padding: 15px 25px;
+  align-self: center;
+  margin: 40px 0 0 0;
+  text-decoration: none;
+  transition: color 0.5s, background-color 0.5s, border-color 0.5s; }
+  @media only screen and (max-width: 576px) {
+    .boton {
+      font-size: 0.8rem; } }
+  .boton:hover {
+    color: #D3D3D3;
+    font-weight: bolder;
+    background-color: #165c85;
+    cursor: pointer; }
