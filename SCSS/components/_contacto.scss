@@ -102,3 +102,7 @@
 .form-label {
     @include parrafo ($color-letra-FC, start)
 }
+
+.boton {
+    background-color: #bdbdbd;
+}

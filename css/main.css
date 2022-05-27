@@ -758,6 +758,9 @@ h5 {
     .form-label {
       font-size: 0.8rem; } }
 
+.boton {
+  background-color: #bdbdbd; }
+
 .footer {
   display: flex;
   justify-content: space-evenly;
