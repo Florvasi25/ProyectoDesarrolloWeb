@@ -25,7 +25,7 @@
                 margin-bottom: 10px;
                 box-shadow: $shadow;
                 @include mQ (tablet) {
-                    width: 80%
+                    width: 80%;
                 }
                 @include mQ (mobile) {
                     width: 100%;
@@ -101,7 +101,7 @@
         &__caja {
             width: 30%;
             @include mQ (tablet) {
-                width: 70%
+                width: 70%;
             }
 
             &Parrafo {

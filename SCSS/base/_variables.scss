@@ -18,12 +18,26 @@ $tamanio-tipolarge:(
 );
 
 $tamanio-tiposmall:(
-    titulo: 1.8rem,
+    titulo: 1.2rem,
     subtitulo: 1.1rem,
     parrafo: 0.8rem,
 );
 
 /* VARIABLES */
+
+@mixin mQ ($pantalla) {
+    @if $pantalla == 'mobile' {
+        @media only screen and (max-width: 576px) {
+            @content;
+        }
+    };
+
+    @if $pantalla == 'tablet' {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+}
 
 @mixin subtitulo ($color, $align) {
     font-size: map-get($tamanio-tipolarge, subtitulo);
@@ -33,7 +47,7 @@ $tamanio-tiposmall:(
     font-family: $fuente-secundaria;
     color: $color;
     text-align: $align;
-    font-weight: bold
+    font-weight: bold;
 }
 
 @mixin parrafo ($color, $align) {
@@ -79,26 +93,6 @@ $tamanio-tiposmall:(
     margin: $margin;
 }
 
-@mixin mQ ($pantalla) {
-    @if $pantalla == 'mobile' {
-        @media only screen and (max-width: 576px) {
-            @content;
-        }
-    };
-
-    @if $pantalla == 'tablet' {
-        @media only screen and (max-width: 992px) {
-            @content;
-        }
-    }
-    
-    @if $pantalla == 'desktop' {
-        @media only screen and (max-width: 1024px) {
-            @content;
-        }
-    }
-}
-
 %titulo {
     font-family: $fuente-principal;
     color: $color-letra-FC;
@@ -106,7 +100,7 @@ $tamanio-tiposmall:(
     text-align: center;
     margin: 0 20px;
     @include mQ (mobile) {
-        font-size: 1.2rem;
+        font-size: map-get($tamanio-tiposmall, titulo);
     }
 }
 
