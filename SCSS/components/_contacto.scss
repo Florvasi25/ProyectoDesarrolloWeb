@@ -22,19 +22,18 @@
 
             & h3 {
                 @include subtitulo ($color-letra-FC, none);
-                font-size: 20px;
-                @include border (flex-start, 25px 0 25px 0);
+                @include border (flex-start, 25px 0);
                 @include mQ (tablet) {
                     align-self: center;
                 }
                 @include mQ (mobile) {
-                    font-size: 20px;
+                    text-align: center;
                 }
             }
 
             & p {
-                padding-top: 10px;
                 @include parrafo ($color-letra-FC, none);
+                padding-top: 10px;
             }
         }
 
@@ -61,6 +60,9 @@
             & p {
                 @include subtitulo ($color-letra-FC, start);
                 margin: 30px 0;
+                @include mQ (mobile) {
+                    margin-right: 5px;
+                } 
             }
         }
     }
@@ -94,11 +96,12 @@
     }
 }
 
-#form-input {
+.form-control {
     background-color: #F4F4F4;
     width: 90%;
 }
 
 .form-label {
-    @include parrafo ($color-letra-FC, start)
+    @include parrafo ($color-letra-FC, start);
+    padding-top: 20px;
 }

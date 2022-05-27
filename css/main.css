@@ -1,14 +1,14 @@
 /* COLORES */
 /* TIPOGRAFIAS */
 /* VARIABLES */
-.indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto, .exito h1 {
+.indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
   font-family: "Fraunces", serif;
   color: #333333;
   font-size: 2rem;
   text-align: center;
   margin: 0 20px; }
   @media only screen and (max-width: 576px) {
-    .indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto, .exito h1 {
+    .indexSuperior__banner h1, .indexMed__columnBoxTexto h2, .QSTitulo h1, .festSup h1, .galeriaSup h1, .contactoSup h1, .contactoInf__texto {
       font-size: 1.2rem; } }
 
 .index, .QS, .fest, .galeria, .contacto, .cuatro {
@@ -21,6 +21,50 @@
   @media only screen and (max-width: 576px) {
     .index, .QS, .fest, .galeria, .contacto, .cuatro {
       padding: 125px 0; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* GOOGLE FONTS
+
+font-family: 'DM Serif Display', serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Commissioner', sans-serif;
+font-family: 'Fraunces', serif;
+
+*/
+p {
+  margin: 0; }
+
+h5 {
+  margin: 25px 0 50px 0;
+  font-size: 16px;
+  text-align: center; }
+
+.boton {
+  font-size: 1rem;
+  font-family: "Commissioner", sans-serif;
+  color: #333333;
+  text-align: none;
+  font-weight: bold;
+  border: solid 1px;
+  border-color: #333333;
+  border-radius: 5px;
+  padding: 15px 25px;
+  align-self: center;
+  margin: 40px 0 0 0;
+  text-decoration: none;
+  transition: color 0.5s, background-color 0.5s, border-color 0.5s; }
+  @media only screen and (max-width: 576px) {
+    .boton {
+      font-size: 0.8rem; } }
+  .boton:hover {
+    color: #D3D3D3;
+    font-weight: bolder;
+    background-color: #165c85;
+    cursor: pointer; }
 
 .barraNavegacion {
   background-color: #165c85;
@@ -179,7 +223,7 @@
     margin: 0 0 20px 0; }
     @media only screen and (max-width: 576px) {
       .indexSuperior__texto h3 {
-        font-size: 1.3rem; } }
+        font-size: 1.1rem; } }
     @media only screen and (max-width: 576px) {
       .indexSuperior__texto h3 {
         font-size: 0.7rem; } }
@@ -330,7 +374,7 @@
       font-weight: bold; }
       @media only screen and (max-width: 576px) {
         .QSSuperior__textoSecundario {
-          font-size: 1.3rem; } }
+          font-size: 1.1rem; } }
     .QSSuperior__textoParrafo {
       font-size: 1rem;
       font-family: "Commissioner", sans-serif;
@@ -345,6 +389,9 @@
       @media only screen and (max-width: 992px) {
         .QSSuperior__textoParrafo {
           padding: 0; } }
+      @media only screen and (max-width: 576px) {
+        .QSSuperior__textoParrafo {
+          padding: 0 30px; } }
     .QSSuperior__textoSubtitulo {
       font-size: 1rem;
       font-family: "Commissioner", sans-serif;
@@ -367,7 +414,8 @@
           font-size: 0.8rem; } }
       @media only screen and (max-width: 992px) {
         .QSSuperior__textoFirma {
-          align-self: flex-end; } }
+          align-self: flex-end;
+          padding-right: 30px; } }
   .QSSuperior992 {
     display: none; }
     @media only screen and (max-width: 992px) {
@@ -375,7 +423,7 @@
         display: flex;
         flex-direction: column;
         background-color: #D3D3D3;
-        padding: 50px; } }
+        padding: 50px 0; } }
 
 .QSMedio {
   height: fit-content;
@@ -450,7 +498,7 @@
   padding-top: 50px; }
   @media only screen and (max-width: 576px) {
     .festSup__card h2 {
-      font-size: 1.3rem; } }
+      font-size: 1.1rem; } }
 
 .festSup__cardPrimer {
   flex-direction: row;
@@ -601,7 +649,7 @@
   font-weight: bold; }
   @media only screen and (max-width: 576px) {
     .contactoSup h2 {
-      font-size: 1.3rem; } }
+      font-size: 1.1rem; } }
 
 .contactoMed__box {
   padding: 25px; }
@@ -619,29 +667,28 @@
       color: #333333;
       text-align: none;
       font-weight: bold;
-      font-size: 20px;
       border: solid 1px;
       border-color: #333333;
       border-radius: 5px;
       padding: 15px 25px;
       align-self: flex-start;
-      margin: 25px 0 25px 0; }
+      margin: 25px 0; }
       @media only screen and (max-width: 576px) {
         .contactoMed__boxIzq h3 {
-          font-size: 1.3rem; } }
+          font-size: 1.1rem; } }
       @media only screen and (max-width: 992px) {
         .contactoMed__boxIzq h3 {
           align-self: center; } }
       @media only screen and (max-width: 576px) {
         .contactoMed__boxIzq h3 {
-          font-size: 20px; } }
+          text-align: center; } }
     .contactoMed__boxIzq p {
-      padding-top: 10px;
       font-size: 1rem;
       font-family: "Commissioner", sans-serif;
       color: #333333;
       text-align: none;
-      font-weight: bold; }
+      font-weight: bold;
+      padding-top: 10px; }
       @media only screen and (max-width: 576px) {
         .contactoMed__boxIzq p {
           font-size: 0.8rem; } }
@@ -655,7 +702,7 @@
     margin: 30px 0; }
     @media only screen and (max-width: 576px) {
       .contactoMed__box h2 {
-        font-size: 1.3rem; } }
+        font-size: 1.1rem; } }
     @media only screen and (max-width: 992px) {
       .contactoMed__box h2 {
         padding-top: 50px; } }
@@ -678,7 +725,10 @@
       margin: 30px 0; }
       @media only screen and (max-width: 576px) {
         .contactoMed__boxDer p {
-          font-size: 1.3rem; } }
+          font-size: 1.1rem; } }
+      @media only screen and (max-width: 576px) {
+        .contactoMed__boxDer p {
+          margin-right: 5px; } }
 
 .contactoInf__imagen {
   display: flex;
@@ -700,7 +750,7 @@
 .contactoInf__texto {
   padding-top: 25px; }
 
-#form-input {
+.form-control {
   background-color: #F4F4F4;
   width: 90%; }
 
@@ -709,7 +759,8 @@
   font-family: "Commissioner", sans-serif;
   color: #333333;
   text-align: start;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-top: 20px; }
   @media only screen and (max-width: 576px) {
     .form-label {
       font-size: 0.8rem; } }
@@ -807,7 +858,7 @@
     padding: 50px 0; }
     @media only screen and (max-width: 576px) {
       .cuatro h2 {
-        font-size: 1.3rem; } }
+        font-size: 1.1rem; } }
   .cuatroCientos {
     display: flex;
     justify-content: space-evenly;
@@ -841,70 +892,4 @@
           margin: 0; }
           @media only screen and (max-width: 576px) {
             .cuatroCientosCuatro a p {
-              font-size: 1.3rem; } }
-
-.exito {
-  background-color: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh; }
-  .exito img {
-    width: 50px;
-    padding-bottom: 50px; }
-  .exito h2 {
-    font-size: 1.5rem;
-    font-family: "Commissioner", sans-serif;
-    color: #333333;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Fraunces", serif; }
-    @media only screen and (max-width: 576px) {
-      .exito h2 {
-        font-size: 1.3rem; } }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-/* GOOGLE FONTS
-
-font-family: 'DM Serif Display', serif;
-font-family: 'Mulish', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Commissioner', sans-serif;
-font-family: 'Fraunces', serif;
-
-*/
-p {
-  margin: 0; }
-
-h5 {
-  margin: 25px 0 50px 0;
-  font-size: 16px;
-  text-align: center; }
-
-.boton {
-  font-size: 1rem;
-  font-family: "Commissioner", sans-serif;
-  color: #333333;
-  text-align: none;
-  font-weight: bold;
-  border: solid 1px;
-  border-color: #333333;
-  border-radius: 5px;
-  padding: 15px 25px;
-  align-self: center;
-  margin: 40px 0 0 0;
-  text-decoration: none;
-  transition: color 0.5s, background-color 0.5s, border-color 0.5s; }
-  @media only screen and (max-width: 576px) {
-    .boton {
-      font-size: 0.8rem; } }
-  .boton:hover {
-    color: #D3D3D3;
-    font-weight: bolder;
-    background-color: #165c85;
-    cursor: pointer; }
+              font-size: 1.1rem; } }
