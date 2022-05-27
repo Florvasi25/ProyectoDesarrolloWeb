@@ -1,0 +1,20 @@
+.exito {
+    background-color: $color-principal;
+    @include flexcolumn (center);
+    width: 100vw;
+    height: 100vh;
+
+    & img {
+        width: 50px;
+        padding-bottom: 50px;
+    }
+
+    & h1 {
+        @extend %titulo;
+    }
+
+    & h2 {
+        @include subtitulo ($color-letra-FC, center);
+        font-family: $fuente-principal;
+    }
+}
