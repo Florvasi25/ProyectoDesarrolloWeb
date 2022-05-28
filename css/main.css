@@ -777,7 +777,7 @@ h5 {
       .footer__logo {
         align-self: center;
         margin: 0; } }
-    .footer__logoImagen {
+    .footer__logo img {
       width: 30px; }
     .footer__logoTexto {
       display: flex;
